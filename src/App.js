@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
 
-function App() {
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import MainContent from "./components/MainContent";
+import About from "./pages/About";
+import OurMinistries from "./pages/OurMinistries";
+import Contact from "./pages/Contact";
+import Home from "./pages/Home";
+import SongDetail from "./pages/SongDetail";
+import Song from "./pages/Song";
+import Sermon from "./pages/Sermon";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="font-sans text-gray-900">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<MainContent />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/ministries" element={<OurMinistries />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/media/songs" element={<Song />} />
+          <Route path="/media/songs/:songId" element={<SongDetail />} />
+          <Route path="/media/sermons" element={<Sermon />} />{" "}
+        </Routes>
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;
