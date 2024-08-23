@@ -48,10 +48,10 @@ const Navbar = () => {
                   Songs
                 </Link>
                 <Link
-                  to="/media/sermons"
+                  to="/media/promise"
                   className="block px-4 py-2 text-white hover:bg-gray-700"
                 >
-                  Sermons
+                  Promise
                 </Link>
               </div>
             </div>

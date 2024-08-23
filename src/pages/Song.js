@@ -20,7 +20,7 @@ const Song = () => {
           <h1 className="text-white text-8xl font-extrabold">Songs</h1>
         </div>
       </div>
-      <ol className="list-decimal list-inside text-left mx-auto max-w-full flex flex-wrap space-y-2 pl-6">
+      <ol className="list-decimal list-inside text-left mx-auto max-w-full space-y-2 pl-10">
         <li
           className="text-xl font-semibold cursor-pointer hover:underline flex-shrink-0 mr-4 mb-2"
           onClick={() => handleSongClick(1)}

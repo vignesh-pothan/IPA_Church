@@ -1,5 +1,3 @@
-// src/App.js
-
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
@@ -10,7 +8,8 @@ import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import SongDetail from "./pages/SongDetail";
 import Song from "./pages/Song";
-import Sermon from "./pages/Sermon";
+
+import PromiseComponent from "./pages/Promise";
 
 const App = () => {
   return (
@@ -25,7 +24,7 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
           <Route path="/media/songs" element={<Song />} />
           <Route path="/media/songs/:songId" element={<SongDetail />} />
-          <Route path="/media/sermons" element={<Sermon />} />{" "}
+          <Route path="/media/promise" element={<PromiseComponent />} />
         </Routes>
       </div>
     </Router>
