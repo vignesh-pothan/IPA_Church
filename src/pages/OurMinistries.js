@@ -95,7 +95,8 @@ const ministries = [
 
 const OurMinistries = () => {
   return (
-    <div className="py-16 ">
+    <div>
+      {/* Remove padding on smaller screens */}
       <div className="relative mb-8">
         <img
           src="/every.png"
@@ -114,20 +115,40 @@ const OurMinistries = () => {
             key={index}
             className="flex flex-col md:flex-row items-center gap-8 md:gap-12"
           >
-            <div className="w-screen md:w-1/2 overflow-hidden">
+            {/* Small screens layout */}
+            <div className="flex flex-col md:hidden w-screen mx-auto">
+              {/* Full width on small screens */}
+              <h2 className="text-xl sm:text-2xl font-bold mb-4 px-2">
+                {ministry.title}
+              </h2>
               <img
                 src={ministry.image}
                 alt={ministry.title}
-                className="w-full h-auto object-cover"
+                className="w-screen h-auto object-cover mb-4"
               />
-            </div>
-            <div className="w-screen md:w-1/2 p-4">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
-                {ministry.title}
-              </h2>
-              <p className="text-gray-700 text-lg sm:text-xl md:text-2xl font-semibold">
+              <p className="text-gray-700 text-base sm:text-lg font-semibold px-2">
                 {ministry.content}
               </p>
+            </div>
+
+            {/* Medium and larger screens layout */}
+            <div className="hidden md:flex md:flex-row items-center w-full">
+              <div className="md:w-1/2 overflow-hidden">
+                <img
+                  src={ministry.image}
+                  alt={ministry.title}
+                  className="w-full h-auto object-cover"
+                />
+                {/* Start image from the left */}
+              </div>
+              <div className="md:w-1/2 p-6">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
+                  {ministry.title}
+                </h2>
+                <p className="text-gray-700 text-lg sm:text-xl md:text-2xl font-semibold">
+                  {ministry.content}
+                </p>
+              </div>
             </div>
           </div>
         ))}
