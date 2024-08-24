@@ -16,69 +16,28 @@ const PromiseComponent = () => {
         </div>
       </div>
 
-      <div className="flex flex-col items-center space-y-8 md:space-y-16">
-        <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold">
-          YEAR 2024
-        </h2>
-        <img
-          src="/p1.png"
-          alt="Word 1 Graphic"
-          className="w-100 h-48 md:h-64 lg:h-96 object-cover"
-        />
-        <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold">
-          FEBRUARY 2024
-        </h2>
-        <img
-          src="/p2.png"
-          alt="Word 2 Graphic"
-          className="w-100 h-48 md:h-64 lg:h-96 object-cover"
-        />
-        <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold">
-          MARCH 2024
-        </h2>
-        <img
-          src="/p3.png"
-          alt="Word 3 Graphic"
-          className="w-100 h-48 md:h-64 lg:h-96 object-cover"
-        />
-        <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold">
-          APRIL 2024
-        </h2>
-        <img
-          src="/p4.png"
-          alt="Word 4 Graphic"
-          className="w-100 h-48 md:h-64 lg:h-96 object-cover"
-        />
-        <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold">MAY 2024</h2>
-        <img
-          src="/p5.png"
-          alt="Word 5 Graphic"
-          className="w-100 h-48 md:h-64 lg:h-96 object-cover"
-        />
-        <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold">
-          JUNE 2024
-        </h2>
-        <img
-          src="/p6.png"
-          alt="Word 6 Graphic"
-          className="w-100 h-48 md:h-64 lg:h-96 object-cover"
-        />
-        <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold">
-          JULY 2024
-        </h2>
-        <img
-          src="/p7.png"
-          alt="Word 7 Graphic"
-          className="w-100 h-48 md:h-64 lg:h-96 object-cover"
-        />
-        <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold">
-          AUGUST 2024
-        </h2>
-        <img
-          src="/p8.png"
-          alt="Word 8 Graphic"
-          className="w-100 h-48 md:h-64 lg:h-96 object-cover"
-        />
+      <div className="flex flex-col items-center space-y-8 md:space-y-12 lg:space-y-16">
+        {[
+          { title: "YEAR 2024", src: "/p1.png" },
+          { title: "FEBRUARY 2024", src: "/p2.png" },
+          { title: "MARCH 2024", src: "/p3.png" },
+          { title: "APRIL 2024", src: "/p4.png" },
+          { title: "MAY 2024", src: "/p5.png" },
+          { title: "JUNE 2024", src: "/p6.png" },
+          { title: "JULY 2024", src: "/p7.png" },
+          { title: "AUGUST 2024", src: "/p8.png" },
+        ].map((item, index) => (
+          <div key={index} className="flex flex-col items-center">
+            <h2 className="text-xl md:text-2xl lg:text-3xl font-bold mb-4">
+              {item.title}
+            </h2>
+            <img
+              src={item.src}
+              alt={`Word ${index + 1} Graphic`}
+              className="w-full max-w-[90vw] h-48 md:h-64 lg:h-80 object-cover"
+            />
+          </div>
+        ))}
       </div>
     </div>
   );

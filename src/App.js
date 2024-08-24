@@ -8,7 +8,6 @@ import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import SongDetail from "./pages/SongDetail";
 import Song from "./pages/Song";
-
 import PromiseComponent from "./pages/Promise";
 
 const App = () => {

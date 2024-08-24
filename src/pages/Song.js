@@ -9,20 +9,22 @@ const Song = () => {
   };
 
   return (
-    <div className="text-center py-16">
-      <div className="relative mb-8" id="who-we-are">
+    <div className="text-center   ">
+      <div className="relative mb-8">
         <img
           src="/every.png"
           alt="Who We Are"
-          className="w-full h-96 object-cover"
+          className="w-full h-48 sm:h-72 md:h-96 object-cover"
         />
         <div className="absolute inset-0 flex items-center justify-center text-center bg-black bg-opacity-50">
-          <h1 className="text-white text-8xl font-extrabold">Songs</h1>
+          <h1 className="text-white text-4xl sm:text-6xl md:text-8xl font-extrabold">
+            Songs
+          </h1>
         </div>
       </div>
-      <ol className="list-decimal list-inside text-left mx-auto max-w-full space-y-2 pl-10">
+      <ol className="list-decimal list-inside text-left mx-auto max-w-full space-y-2 md:space-y-4 pl-4 md:pl-10">
         <li
-          className="text-xl font-semibold cursor-pointer hover:underline flex-shrink-0 mr-4 mb-2"
+          className="text-base md:text-xl font-semibold cursor-pointer hover:underline mb-2"
           onClick={() => handleSongClick(1)}
         >
           <span>
@@ -30,7 +32,7 @@ const Song = () => {
           </span>
         </li>
         <li
-          className="text-xl font-semibold cursor-pointer hover:underline flex-shrink-0 mr-4 mb-2"
+          className="text-base md:text-xl font-semibold cursor-pointer hover:underline mb-2"
           onClick={() => handleSongClick(2)}
         >
           <span>
@@ -39,19 +41,19 @@ const Song = () => {
           </span>
         </li>
         <li
-          className="text-xl font-semibold cursor-pointer hover:underline flex-shrink-0 mr-4 mb-2"
+          className="text-base md:text-xl font-semibold cursor-pointer hover:underline mb-2"
           onClick={() => handleSongClick(3)}
         >
           <span>உங்க பாதம் எனக்கு தஞ்சம் - Unga paatham enakku thanjam</span>
         </li>
         <li
-          className="text-xl font-semibold cursor-pointer hover:underline flex-shrink-0 mr-4 mb-2"
+          className="text-base md:text-xl font-semibold cursor-pointer hover:underline mb-2"
           onClick={() => handleSongClick(4)}
         >
           <span>வார்த்தை வடிவம் வந்தவர் - Vaarthai vadivam vanthavar</span>
         </li>
         <li
-          className="text-xl font-semibold cursor-pointer hover:underline flex-shrink-0 mr-4 mb-2"
+          className="text-base md:text-xl font-semibold cursor-pointer hover:underline mb-2"
           onClick={() => handleSongClick(5)}
         >
           <span>
@@ -60,13 +62,13 @@ const Song = () => {
           </span>
         </li>
         <li
-          className="text-xl font-semibold cursor-pointer hover:underline flex-shrink-0 mr-4 mb-2"
+          className="text-base md:text-xl font-semibold cursor-pointer hover:underline mb-2"
           onClick={() => handleSongClick(6)}
         >
           <span>உம்மை போல் உம்மை போல் - Ummai pol Ummai pol</span>
         </li>
         <li
-          className="text-xl font-semibold cursor-pointer hover:underline flex-shrink-0 mr-4 mb-2"
+          className="text-base md:text-xl font-semibold cursor-pointer hover:underline mb-2"
           onClick={() => handleSongClick(7)}
         >
           <span>
@@ -75,7 +77,7 @@ const Song = () => {
           </span>
         </li>
         <li
-          className="text-xl font-semibold cursor-pointer hover:underline flex-shrink-0 mr-4 mb-2"
+          className="text-base md:text-xl font-semibold cursor-pointer hover:underline mb-2"
           onClick={() => handleSongClick(8)}
         >
           <span>
@@ -83,7 +85,7 @@ const Song = () => {
           </span>
         </li>
         <li
-          className="text-xl font-semibold cursor-pointer hover:underline flex-shrink-0 mr-4 mb-2"
+          className="text-base md:text-xl font-semibold cursor-pointer hover:underline mb-2"
           onClick={() => handleSongClick(9)}
         >
           <span>
@@ -92,19 +94,19 @@ const Song = () => {
           </span>
         </li>
         <li
-          className="text-xl font-semibold cursor-pointer hover:underline flex-shrink-0 mr-4 mb-2"
+          className="text-base md:text-xl font-semibold cursor-pointer hover:underline mb-2"
           onClick={() => handleSongClick(10)}
         >
           <span>ஆரோக்கியம் ஆரோக்கியம் - Aarokiyam Aarokiyam</span>
         </li>
         <li
-          className="text-xl font-semibold cursor-pointer hover:underline flex-shrink-0 mr-4 mb-2"
+          className="text-base md:text-xl font-semibold cursor-pointer hover:underline mb-2"
           onClick={() => handleSongClick(11)}
         >
           <span>அன்பரே... நன்பரே… - Aanbarea... nanbarea..</span>
         </li>
         <li
-          className="text-xl font-semibold cursor-pointer hover:underline flex-shrink-0 mr-4 mb-2"
+          className="text-base md:text-xl font-semibold cursor-pointer hover:underline mb-2"
           onClick={() => handleSongClick(12)}
         >
           <span>
@@ -112,7 +114,7 @@ const Song = () => {
           </span>
         </li>
         <li
-          className="text-xl font-semibold cursor-pointer hover:underline flex-shrink-0 mr-4 mb-2"
+          className="text-base md:text-xl font-semibold cursor-pointer hover:underline mb-2"
           onClick={() => handleSongClick(13)}
         >
           <span>
@@ -121,19 +123,19 @@ const Song = () => {
           </span>
         </li>
         <li
-          className="text-xl font-semibold cursor-pointer hover:underline flex-shrink-0 mr-4 mb-2"
+          className="text-base md:text-xl font-semibold cursor-pointer hover:underline mb-2"
           onClick={() => handleSongClick(14)}
         >
           <span>என்னை பாட சொல்லி - Ennai paada solli</span>
         </li>
         <li
-          className="text-xl font-semibold cursor-pointer hover:underline flex-shrink-0 mr-4 mb-2"
+          className="text-base md:text-xl font-semibold cursor-pointer hover:underline mb-2"
           onClick={() => handleSongClick(15)}
         >
           <span>ஒருமுறை ஒருமுறை - Orumurai orumurai</span>
         </li>
         <li
-          className="text-xl font-semibold cursor-pointer hover:underline flex-shrink-0 mr-4 mb-2"
+          className="text-base md:text-xl font-semibold cursor-pointer hover:underline mb-2"
           onClick={() => handleSongClick(16)}
         >
           <span>
@@ -141,13 +143,13 @@ const Song = () => {
           </span>
         </li>
         <li
-          className="text-xl font-semibold cursor-pointer hover:underline flex-shrink-0 mr-4 mb-2"
+          className="text-base md:text-xl font-semibold cursor-pointer hover:underline mb-2"
           onClick={() => handleSongClick(17)}
         >
           <span>எங்கும் நிறைந்தவரே - Engum nirainthavarea</span>
         </li>
         <li
-          className="text-xl font-semibold cursor-pointer hover:underline flex-shrink-0 mr-4 mb-2"
+          className="text-base md:text-xl font-semibold cursor-pointer hover:underline mb-2"
           onClick={() => handleSongClick(18)}
         >
           <span>
@@ -155,7 +157,7 @@ const Song = () => {
           </span>
         </li>
         <li
-          className="text-xl font-semibold cursor-pointer hover:underline flex-shrink-0 mr-4 mb-2"
+          className="text-base md:text-xl font-semibold cursor-pointer hover:underline mb-2"
           onClick={() => handleSongClick(19)}
         >
           <span>
@@ -164,13 +166,13 @@ const Song = () => {
           </span>
         </li>
         <li
-          className="text-xl font-semibold cursor-pointer hover:underline flex-shrink-0 mr-4 mb-2"
+          className="text-base md:text-xl font-semibold cursor-pointer hover:underline mb-2"
           onClick={() => handleSongClick(20)}
         >
           <span>தா எண்டரல்லவா கேட்டார் - Thaa endrallavaa kaetaar</span>
         </li>
         <li
-          className="text-xl font-semibold cursor-pointer hover:underline flex-shrink-0 mr-4 mb-2"
+          className="text-base md:text-xl font-semibold cursor-pointer hover:underline mb-2"
           onClick={() => handleSongClick(21)}
         >
           <span>
@@ -178,13 +180,13 @@ const Song = () => {
           </span>
         </li>
         <li
-          className="text-xl font-semibold cursor-pointer hover:underline flex-shrink-0 mr-4 mb-2"
+          className="text-base md:text-xl font-semibold cursor-pointer hover:underline mb-2"
           onClick={() => handleSongClick(22)}
         >
           <span>மொழிகள் பல பயன்படுதி - Moligal pala bayanpaduthii</span>
         </li>
         <li
-          className="text-xl font-semibold cursor-pointer hover:underline flex-shrink-0 mr-4 mb-2"
+          className="text-base md:text-xl font-semibold cursor-pointer hover:underline mb-2"
           onClick={() => handleSongClick(23)}
         >
           <span>
@@ -193,7 +195,7 @@ const Song = () => {
           </span>
         </li>
         <li
-          className="text-xl font-semibold cursor-pointer hover:underline flex-shrink-0 mr-4 mb-2"
+          className="text-base md:text-xl font-semibold cursor-pointer hover:underline mb-2"
           onClick={() => handleSongClick(24)}
         >
           <span>
@@ -202,7 +204,7 @@ const Song = () => {
           </span>
         </li>
         <li
-          className="text-xl font-semibold cursor-pointer hover:underline flex-shrink-0 mr-4 mb-2"
+          className="text-base md:text-xl font-semibold cursor-pointer hover:underline mb-2"
           onClick={() => handleSongClick(25)}
         >
           <span>
@@ -211,13 +213,13 @@ const Song = () => {
           </span>
         </li>
         <li
-          className="text-xl font-semibold cursor-pointer hover:underline flex-shrink-0 mr-4 mb-2"
+          className="text-base md:text-xl font-semibold cursor-pointer hover:underline mb-2"
           onClick={() => handleSongClick(26)}
         >
-          <span>பெலனே என் கண்மலையே - Belanae en kanmalaiye </span>
+          <span>பெலனே என் கண்மலையே - Belanae en kanmalaiye</span>
         </li>
         <li
-          className="text-xl font-semibold cursor-pointer hover:underline flex-shrink-0 mr-4 mb-2"
+          className="text-base md:text-xl font-semibold cursor-pointer hover:underline mb-2"
           onClick={() => handleSongClick(27)}
         >
           <span>
@@ -226,19 +228,19 @@ const Song = () => {
           </span>
         </li>
         <li
-          className="text-xl font-semibold cursor-pointer hover:underline flex-shrink-0 mr-4 mb-2"
+          className="text-base md:text-xl font-semibold cursor-pointer hover:underline mb-2"
           onClick={() => handleSongClick(28)}
         >
           <span>என்னையும் தேடி வந்தீரே - Ennaiyum thedi vanthirey</span>
         </li>
         <li
-          className="text-xl font-semibold cursor-pointer hover:underline flex-shrink-0 mr-4 mb-2"
+          className="text-base md:text-xl font-semibold cursor-pointer hover:underline mb-2"
           onClick={() => handleSongClick(29)}
         >
-          <span>என்னை நன்றாக நடத்திநீரே - Ennai nanraga nadaththineere </span>
+          <span>என்னை நன்றாக நடத்திநீரே - Ennai nanraga nadaththineere</span>
         </li>
         <li
-          className="text-xl font-semibold cursor-pointer hover:underline flex-shrink-0 mr-4 mb-2"
+          className="text-base md:text-xl font-semibold cursor-pointer hover:underline mb-2"
           onClick={() => handleSongClick(30)}
         >
           <span>
@@ -247,7 +249,7 @@ const Song = () => {
           </span>
         </li>
         <li
-          className="text-xl font-semibold cursor-pointer hover:underline flex-shrink-0 mr-4 mb-2"
+          className="text-base md:text-xl font-semibold cursor-pointer hover:underline mb-2"
           onClick={() => handleSongClick(31)}
         >
           <span>
@@ -255,7 +257,7 @@ const Song = () => {
           </span>
         </li>
         <li
-          className="text-xl font-semibold cursor-pointer hover:underline flex-shrink-0 mr-4 mb-2"
+          className="text-base md:text-xl font-semibold cursor-pointer hover:underline mb-2"
           onClick={() => handleSongClick(32)}
         >
           <span>
@@ -263,25 +265,25 @@ const Song = () => {
           </span>
         </li>
         <li
-          className="text-xl font-semibold cursor-pointer hover:underline flex-shrink-0 mr-4 mb-2"
+          className="text-base md:text-xl font-semibold cursor-pointer hover:underline mb-2"
           onClick={() => handleSongClick(33)}
         >
           <span>தேவா ஆராதிக்கிறோம் - Deva aarathikirom</span>
         </li>
         <li
-          className="text-xl font-semibold cursor-pointer hover:underline flex-shrink-0 mr-4 mb-2"
+          className="text-base md:text-xl font-semibold cursor-pointer hover:underline mb-2"
           onClick={() => handleSongClick(34)}
         >
           <span>பாசமுள்ள இயேசு அப்பா பாரில் - Paasamalla Yesu Appa Paaril</span>
         </li>
         <li
-          className="text-xl font-semibold cursor-pointer hover:underline flex-shrink-0 mr-4 mb-2"
+          className="text-base md:text-xl font-semibold cursor-pointer hover:underline mb-2"
           onClick={() => handleSongClick(35)}
         >
           <span>சொந்தம் என்று சொல்லிட - Sondham Endru Sollida</span>
         </li>
         <li
-          className="text-xl font-semibold cursor-pointer hover:underline flex-shrink-0 mr-4 mb-2"
+          className="text-base md:text-xl font-semibold cursor-pointer hover:underline mb-2"
           onClick={() => handleSongClick(36)}
         >
           <span>
@@ -290,7 +292,7 @@ const Song = () => {
           </span>
         </li>
         <li
-          className="text-xl font-semibold cursor-pointer hover:underline flex-shrink-0 mr-4 mb-2"
+          className="text-base md:text-xl font-semibold cursor-pointer hover:underline mb-2"
           onClick={() => handleSongClick(37)}
         >
           <span>
@@ -299,7 +301,7 @@ const Song = () => {
           </span>
         </li>
         <li
-          className="text-xl font-semibold cursor-pointer hover:underline flex-shrink-0 mr-4 mb-2"
+          className="text-base md:text-xl font-semibold cursor-pointer hover:underline mb-2"
           onClick={() => handleSongClick(38)}
         >
           <span>
@@ -308,7 +310,7 @@ const Song = () => {
           </span>
         </li>
         <li
-          className="text-xl font-semibold cursor-pointer hover:underline flex-shrink-0 mr-4 mb-2"
+          className="text-base md:text-xl font-semibold cursor-pointer hover:underline mb-2"
           onClick={() => handleSongClick(39)}
         >
           <span>

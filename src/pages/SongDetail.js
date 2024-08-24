@@ -3590,11 +3590,11 @@ const SongDetail = () => {
   }
 
   return (
-    <div className="text-center py-16">
-      <h2 className="text-3xl mb-4 relative" style={{ left: "1rem" }}>
+    <div className="text-center py-8 px-4 md:py-16 md:px-8">
+      <h2 className="text-2xl md:text-3xl mb-4 relative mx-4 md:mx-0">
         {song.subtitle}
       </h2>
-      <div className=" text-xl text-left mx-auto max-w-3xl whitespace-pre-wrap">
+      <div className="text-lg md:text-xl text-left mx-auto max-w-full md:max-w-3xl whitespace-pre-wrap px-4">
         {song.lyrics}
       </div>
     </div>

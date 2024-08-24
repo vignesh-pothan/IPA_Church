@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 const MainContent = () => {
   return (
     <div className="font-sans text-gray-900">
@@ -10,26 +11,30 @@ const MainContent = () => {
           alt="Welcome"
           className="w-full h-screen object-cover"
         />
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-center bg-black bg-opacity-50">
-          <h1 className="text-white text-6xl font-bold mb-4">
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center bg-black bg-opacity-50 px-4">
+          <h1 className="text-white text-3xl md:text-6xl font-bold mb-4">
             என் சமுகம் உனக்கு முன்பாகச் செல்லும், நான் உனக்கு இளைப்பாறுதல்
             தருவேன்
           </h1>
-          <h3 className="text-white text-2xl font-medium">
+          <h3 className="text-white text-xl md:text-2xl font-medium">
             யாத்திராகமம் 33:14
           </h3>
         </div>
       </div>
 
       {/* Section 2 */}
-      <div className="bg-gray-900 text-white py-24" id="vision">
-        <div className="text-center">
-          <h2 className="text-4xl font-bold mb-12">Our Vision</h2>
-          <div className="flex justify-center space-x-24">
+      <div className="bg-gray-900 text-white py-12 md:py-24" id="vision">
+        <div className="text-center px-4">
+          <h2 className="text-3xl md:text-4xl font-bold mb-8 md:mb-12">
+            Our Vision
+          </h2>
+          <div className="flex flex-col md:flex-row justify-center md:space-x-24 space-y-8 md:space-y-0">
             {/* Church Planting */}
-            <div className="w-1/2">
-              <h3 className="text-2xl font-semibold mb-6">Church Planting</h3>
-              <p className="text-lg">
+            <div className="md:w-1/2">
+              <h3 className="text-xl md:text-2xl font-semibold mb-4 md:mb-6">
+                Church Planting
+              </h3>
+              <p className="text-base md:text-lg">
                 Driven by the Great Commission, we aim to plant new churches in
                 unreached areas, sharing the gospel, and establishing
                 communities of faith. We believe in empowering leaders,
@@ -38,9 +43,11 @@ const MainContent = () => {
               </p>
             </div>
             {/* Church Growth */}
-            <div className="w-1/2">
-              <h3 className="text-2xl font-semibold mb-6">Church Growth</h3>
-              <p className="text-lg">
+            <div className="md:w-1/2">
+              <h3 className="text-xl md:text-2xl font-semibold mb-4 md:mb-6">
+                Church Growth
+              </h3>
+              <p className="text-base md:text-lg">
                 We are committed to nurturing a thriving, spiritually vibrant
                 community where every believer can grow in their faith and walk
                 with Christ. Our focus is on deepening our connection with God,
@@ -53,14 +60,16 @@ const MainContent = () => {
       </div>
 
       {/* Section 3 */}
-      <div id="services">
-        <div className="text-center py-8">
-          <h2 className="text-3xl font-bold mb-4">Most Recent Sermon</h2>
-          <div className="relative">
+      <div id="services" className="py-8 px-4">
+        <div className="text-center">
+          <h2 className="text-2xl md:text-3xl font-bold mb-4">
+            Most Recent Sermon
+          </h2>
+          <div className="relative mx-auto w-full max-w-md">
             <img
               src="https://via.placeholder.com/400x200"
               alt="Sermon"
-              className="mx-auto"
+              className="w-full"
             />
             <div className="absolute inset-0 flex items-center justify-center">
               <a
@@ -75,11 +84,15 @@ const MainContent = () => {
       </div>
 
       {/* Section 4 */}
-      <div className="text-center py-16">
-        <h2 className="text-3xl font-bold mb-4">ONE CHURCH. THREE LOCATIONS</h2>
-        <div className="flex justify-center space-x-16">
+      <div className="text-center py-8 md:py-16 px-4">
+        <h2 className="text-2xl md:text-3xl font-bold mb-8 md:mb-4">
+          ONE CHURCH. THREE LOCATIONS
+        </h2>
+        <div className="flex flex-col md:flex-row justify-center md:space-x-16 space-y-8 md:space-y-0">
           <div>
-            <h3 className="text-xl font-semibold mt-4">Vannarpettai</h3>
+            <h3 className="text-lg md:text-xl font-semibold mt-4">
+              Vannarpettai
+            </h3>
             <img
               src="https://via.placeholder.com/400x200"
               alt="The Brook"
@@ -92,7 +105,7 @@ const MainContent = () => {
             </p>
           </div>
           <div>
-            <h3 className="text-xl font-semibold mt-4">
+            <h3 className="text-lg md:text-xl font-semibold mt-4">
               Thiruvengadanathapuram
             </h3>
             <img
@@ -107,7 +120,9 @@ const MainContent = () => {
             </p>
           </div>
           <div>
-            <h3 className="text-xl font-semibold mt-4">KOKKIRAKULAM</h3>
+            <h3 className="text-lg md:text-xl font-semibold mt-4">
+              KOKKIRAKULAM
+            </h3>
             <img
               src="https://via.placeholder.com/400x200"
               alt="Kokkirakulam"
@@ -123,9 +138,11 @@ const MainContent = () => {
       </div>
 
       {/* Section 5 */}
-      <div className="bg-orange-500 text-center py-16" id="about">
-        <h2 className="text-3xl font-bold mb-4">Follow us on social media.</h2>
-        <div className="flex justify-center space-x-6">
+      <div className="bg-orange-500 text-center py-8 md:py-16 px-4" id="about">
+        <h2 className="text-2xl md:text-3xl font-bold mb-4">
+          Follow us on social media.
+        </h2>
+        <div className="flex justify-center space-x-4 md:space-x-6">
           <a
             href="https://www.facebook.com/profile.php?id=100076057789026"
             target="_blank"
@@ -134,7 +151,7 @@ const MainContent = () => {
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
               alt="Facebook"
-              className="w-8 h-8"
+              className="w-6 h-6 md:w-8 md:h-8"
             />
           </a>
           <a
@@ -145,7 +162,7 @@ const MainContent = () => {
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
               alt="Instagram"
-              className="w-8 h-8"
+              className="w-6 h-6 md:w-8 md:h-8"
             />
           </a>
           <a
@@ -156,22 +173,22 @@ const MainContent = () => {
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png"
               alt="YouTube"
-              className="w-8 h-8"
+              className="w-6 h-6 md:w-8 md:h-8"
             />
           </a>
         </div>
       </div>
+
       {/* Section 6 (Footer) */}
-      <div className="bg-gray-800 text-white py-8" id="contact">
-        <div className="flex justify-between items-start px-8">
-          <div className="w-1/2 pr-4">
-            <h3 className="text-xl font-semibold">Address</h3>
+      <div className="bg-gray-800 text-white py-8 px-4" id="contact">
+        <div className="flex flex-col md:flex-row justify-between items-start">
+          <div className="md:w-1/2 md:pr-4 mb-4 md:mb-0">
+            <h3 className="text-lg md:text-xl font-semibold">Address</h3>
             <p>N Bypass Road, Vannarpettai, Tirunelveli, Tamil Nadu 627003</p>
             <p>Phone: +91 94434 97344</p>
           </div>
-          <div className="w-1/2 pl-4 text-right">
-            <h3 className="text-xl font-semibold">Quick Links</h3>
-
+          <div className="md:w-1/2 md:pl-4 text-left md:text-right">
+            <h3 className="text-lg md:text-xl font-semibold">Quick Links</h3>
             <ul className="space-y-2">
               <li>
                 <Link to="/about" className="hover:underline">

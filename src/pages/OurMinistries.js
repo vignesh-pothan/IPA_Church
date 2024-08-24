@@ -95,30 +95,37 @@ const ministries = [
 
 const OurMinistries = () => {
   return (
-    <div className="py-16">
-      <div className="relative mb-16" id="who-we-are">
+    <div className="py-16 ">
+      <div className="relative mb-8">
         <img
           src="/every.png"
           alt="Who We Are"
-          className="w-full h-96 object-cover"
+          className="w-full h-48 sm:h-72 md:h-96 object-cover"
         />
         <div className="absolute inset-0 flex items-center justify-center text-center bg-black bg-opacity-50">
-          <h1 className="text-white text-8xl font-extrabold">Our Ministries</h1>
+          <h1 className="text-white text-4xl sm:text-6xl md:text-8xl font-extrabold">
+            Our Ministries
+          </h1>
         </div>
       </div>
       <div className="space-y-16">
         {ministries.map((ministry, index) => (
-          <div key={index} className="flex flex-col md:flex-row items-center">
-            <div className="md:w-1/2">
+          <div
+            key={index}
+            className="flex flex-col md:flex-row items-center gap-8 md:gap-12"
+          >
+            <div className="w-screen md:w-1/2 overflow-hidden">
               <img
                 src={ministry.image}
                 alt={ministry.title}
-                className="w-full h-auto object-contain max-h-60 md:max-h-80 lg:max-h-96"
+                className="w-full h-auto object-cover"
               />
             </div>
-            <div className="md:w-1/2 p-4 md:pl-8">
-              <h2 className="text-2xl font-bold mb-4">{ministry.title}</h2>
-              <p className="text-gray-700 text-xl font-semibold">
+            <div className="w-screen md:w-1/2 p-4">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
+                {ministry.title}
+              </h2>
+              <p className="text-gray-700 text-lg sm:text-xl md:text-2xl font-semibold">
                 {ministry.content}
               </p>
             </div>
