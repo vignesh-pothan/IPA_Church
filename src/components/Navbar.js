@@ -5,6 +5,16 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
+  // Function to toggle dropdown and close it when an item is clicked
+  const handleDropdownClick = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
+
+  const handleItemClick = () => {
+    setIsDropdownOpen(false);
+    setIsOpen(false); // Collapse mobile menu if open
+  };
+
   return (
     <nav className="bg-gray-800 shadow-md fixed w-full z-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -41,7 +51,7 @@ const Navbar = () => {
               </Link>
               <div className="relative">
                 <button
-                  onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+                  onClick={handleDropdownClick}
                   className="text-white hover:text-gray-300 px-3 py-2 rounded-md text-sm font-medium focus:outline-none"
                 >
                   Media
@@ -51,12 +61,14 @@ const Navbar = () => {
                     <Link
                       to="/media/songs"
                       className="block px-4 py-2 text-white hover:bg-gray-700"
+                      onClick={handleItemClick}
                     >
                       Songs
                     </Link>
                     <Link
                       to="/media/promise"
                       className="block px-4 py-2 text-white hover:bg-gray-700"
+                      onClick={handleItemClick}
                     >
                       Promise
                     </Link>
@@ -109,24 +121,27 @@ const Navbar = () => {
             <Link
               to="/"
               className="text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700"
+              onClick={handleItemClick}
             >
               Home
             </Link>
             <Link
               to="/about"
               className="text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700"
+              onClick={handleItemClick}
             >
               About Us
             </Link>
             <Link
               to="/ministries"
               className="text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700"
+              onClick={handleItemClick}
             >
               Our Ministries
             </Link>
             <div className="relative">
               <button
-                onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+                onClick={handleDropdownClick}
                 className="text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700 focus:outline-none"
               >
                 Media
@@ -136,12 +151,14 @@ const Navbar = () => {
                   <Link
                     to="/media/songs"
                     className="text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700"
+                    onClick={handleItemClick}
                   >
                     Songs
                   </Link>
                   <Link
                     to="/media/promise"
                     className="text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700"
+                    onClick={handleItemClick}
                   >
                     Promise
                   </Link>
@@ -151,6 +168,7 @@ const Navbar = () => {
             <Link
               to="/contact"
               className="text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700"
+              onClick={handleItemClick}
             >
               Contact Us
             </Link>
