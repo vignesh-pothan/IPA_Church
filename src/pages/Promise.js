@@ -3,19 +3,18 @@ import React from "react";
 const PromiseComponent = () => {
   return (
     <div className="text-center py-16">
-      <div className="relative mb-16" id="who-we-are">
+      <div className="relative mb-8">
         <img
           src="/every.png"
-          alt="Background"
-          className="w-full h-96 object-cover"
+          alt="Who We Are"
+          className="w-full h-48 sm:h-72 md:h-96 object-cover"
         />
         <div className="absolute inset-0 flex items-center justify-center text-center bg-black bg-opacity-50">
-          <h1 className="text-white text-4xl md:text-6xl lg:text-8xl font-extrabold">
+          <h1 className="text-white text-4xl sm:text-6xl md:text-8xl font-extrabold">
             Promise Words
           </h1>
         </div>
       </div>
-
       <div className="flex flex-col items-center space-y-8 md:space-y-12 lg:space-y-16">
         {[
           { title: "YEAR 2024", src: "/p1.png" },
@@ -34,7 +33,7 @@ const PromiseComponent = () => {
             <img
               src={item.src}
               alt={`Word ${index + 1} Graphic`}
-              className="w-full max-w-[90vw] h-48 md:h-64 lg:h-80 object-cover"
+              className="w-full max-w-[90vw] h-auto max-h-[50vh] md:max-h-[60vh] lg:max-h-[70vh] object-contain"
             />
           </div>
         ))}

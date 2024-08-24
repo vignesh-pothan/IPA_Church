@@ -4,15 +4,15 @@ const About = () => {
   return (
     <div className="bg-gray-100">
       {/* Hero Section */}
-      <div className="relative" id="who-we-are">
+      <div className="relative mb-8">
         <img
           src="/every.png"
           alt="Who We Are"
-          className="w-full h-72 sm:h-96 object-cover"
+          className="w-full h-48 sm:h-72 md:h-96 object-cover"
         />
         <div className="absolute inset-0 flex items-center justify-center text-center bg-black bg-opacity-50">
-          <h1 className="text-white text-4xl sm:text-6xl lg:text-8xl font-extrabold">
-            Who We Are
+          <h1 className="text-white text-4xl sm:text-6xl md:text-8xl font-extrabold">
+            About Us
           </h1>
         </div>
       </div>

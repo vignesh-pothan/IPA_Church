@@ -4,17 +4,19 @@ import { useParams } from "react-router-dom";
 const songs = {
   1: {
     subtitle: (
-      <span
+      <div
         style={{
-          textAlign: "center",
-          marginLeft: "140px",
+          display: "flex",
+          justifyContent: "center",
           marginTop: "2rem",
         }}
       >
-        <strong>
-          என் வாழ்விலே நீர் பாராட்டின - En vaazhvile neer paarattina
-        </strong>
-      </span>
+        <span style={{ textAlign: "center" }}>
+          <strong>
+            என் வாழ்விலே நீர் பாராட்டின - En vaazhvile neer paarattina
+          </strong>
+        </span>
+      </div>
     ),
     lyrics: (
       <>
@@ -53,22 +55,25 @@ const songs = {
         <p className="mt-6">
           3. சொந்தமான பிள்ளையாக
           <br />
-          தகப்பனை போல் சுமந்தீர் இமைப்பொழுதும் என்னை விலகினாலும்
+          தகப்பனை போல் சுமந்தீர்
+          <br />
+          இமைப்பொழுதும் என்னை விலகினாலும்
           <br />
           இரக்கங்களால் என்னை சேர்த்துக்கொள்வீர்
         </p>
 
-        <p
+        <div
           style={{
-            textAlign: "center",
-            marginLeft: "-110px",
+            display: "flex",
+            justifyContent: "center",
             marginTop: "2rem",
           }}
         >
-          <strong style={{ fontSize: "1.875rem" }}>
-            En vaazhvile neenga paarattina Lyrics in English
-          </strong>
-        </p>
+          <p style={{ textAlign: "center", fontSize: "1.875rem" }}>
+            <strong>En vaazhvile neenga paarattina Lyrics in English</strong>
+          </p>
+        </div>
+
         <p className="mt-8">
           En vaazhvile neenga paarattina
           <br />
@@ -115,18 +120,20 @@ const songs = {
   },
   2: {
     subtitle: (
-      <span
+      <div
         style={{
-          textAlign: "center",
-          marginLeft: "-30px",
+          display: "flex",
+          justifyContent: "center",
           marginTop: "2rem",
         }}
       >
-        <strong>
-          இயேசுவே இயேசுவே இரங்கும் என் தேவனே - Yeasuvay Yeasuvay Irangum En
-          Dhaevanay
-        </strong>
-      </span>
+        <span style={{ textAlign: "center" }}>
+          <strong>
+            இயேசுவே இயேசுவே இரங்கும் என் தேவனே - Yeasuvay Yeasuvay Irangum En
+            Dhaevanay
+          </strong>
+        </span>
+      </div>
     ),
     lyrics: (
       <>
@@ -162,17 +169,19 @@ const songs = {
           கொடியே வீசுமே
         </p>
 
-        <p
+        <div
           style={{
-            textAlign: "center",
-            marginLeft: "-60px",
+            display: "flex",
+            justifyContent: "center",
             marginTop: "2rem",
           }}
         >
-          <strong style={{ fontSize: "1.875rem" }}>
-            Yeasuvay Yeasuvay Irangum En Dhaevanay Lyrics in English
-          </strong>
-        </p>
+          <p style={{ textAlign: "center", fontSize: "1.875rem" }}>
+            <strong>
+              Yeasuvay Yeasuvay Irangum En Dhaevanay Lyrics in English
+            </strong>
+          </p>
+        </div>
 
         <p className="mt-4 mb-4">Yeasuvea yeasuvea irangum en deavanea</p>
         <p className="mt-6">
@@ -183,7 +192,7 @@ const songs = {
           veandumea
         </p>
         <p className="mt-6">
-          2.Viyathiilla, vaalvinai varamaai thaarumea
+          2. Viyathiilla, vaalvinai varamaai thaarumea
           <br />
           Aarokiyam ennil nirantharam vendumea
         </p>
@@ -210,13 +219,23 @@ const songs = {
   },
   3: {
     subtitle: (
-      <span>
-        <strong>உங்க பாதம் எனக்கு தஞ்சம் - Unga paatham enakku thanjam</strong>
-      </span>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          marginTop: "2rem",
+        }}
+      >
+        <span style={{ textAlign: "center" }}>
+          <strong>
+            உங்க பாதம் எனக்கு தஞ்சம் - Unga paatham enakku thanjam
+          </strong>
+        </span>
+      </div>
     ),
     lyrics: (
       <>
-        <p mt-4>
+        <p className="mt-4">
           உங்க பாதம் எனக்கு தஞ்சம்
           <br />
           உங்க வேதம் எனக்கு இன்பம்
@@ -257,12 +276,19 @@ const songs = {
           <br />- உங்க பாத்தம்
         </p>
 
-        <p className="mt-8 text-center">
-          <strong style={{ fontSize: "1.875rem" }}>
-            Unga paatham enakku thanjam Lyrics in English
-          </strong>
-        </p>
-        <p mt-4>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "2rem",
+          }}
+        >
+          <p style={{ textAlign: "center", fontSize: "1.875rem" }}>
+            <strong>Unga paatham enakku thanjam Lyrics in English</strong>
+          </p>
+        </div>
+
+        <p className="mt-4">
           Unga paatham enakku thanjam
           <br />
           Unga veatham enakku inbam
@@ -279,7 +305,7 @@ const songs = {
           Ennai selithoonga seiybavarea
           <br />
           Naan seyalbaduvean umakkullea
-          <br /> - unga paatham
+          <br />- unga paatham
         </p>
         <p className="mt-6">
           2. Mana vaaleyea endreerea
@@ -306,13 +332,21 @@ const songs = {
   },
   4: {
     subtitle: (
-      <span>
-        <strong>வார்த்தை வடிவம் வந்தவர் - Vaarthai vadivam vanthavar</strong>
-      </span>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          marginTop: "2rem",
+        }}
+      >
+        <span style={{ textAlign: "center" }}>
+          <strong>வார்த்தை வடிவம் வந்தவர் - Vaarthai vadivam vanthavar</strong>
+        </span>
+      </div>
     ),
     lyrics: (
       <>
-        <p mt-4>
+        <p className="mt-4">
           வார்த்தை வடிவம் வந்தவர்
           <br />
           விண்ணை தாண்டி குதித்தவர்
@@ -323,7 +357,7 @@ const songs = {
         </p>
 
         <p className="mt-6">
-          1.வலியை நீக்கும் (போக்கும்) மருத்துவர்
+          1. வலியை நீக்கும் (போக்கும்) மருத்துவர்
           <br />
           வாக்குத்தம் தருபவர்
           <br />
@@ -332,7 +366,7 @@ const songs = {
           உள்ளம் கவர்ந்த இதய நாயகர்
         </p>
         <p className="mt-6">
-          2.வாலிபத்தில் என்னை கண்டவர்
+          2. வாலிபத்தில் என்னை கண்டவர்
           <br />
           நாரைவயது வரை தாங்குகின்றவர்
           <br />
@@ -341,12 +375,19 @@ const songs = {
           உறங்காமல் என்னை நினைபவர்
         </p>
 
-        <p className="mt-8 text-center">
-          <strong style={{ fontSize: "1.875rem" }}>
-            Vaarthai vadivam vanthavar Lyrics in English
-          </strong>
-        </p>
-        <p mt-4>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "2rem",
+          }}
+        >
+          <p style={{ textAlign: "center", fontSize: "1.875rem" }}>
+            <strong>Vaarthai vadivam vanthavar Lyrics in English</strong>
+          </p>
+        </div>
+
+        <p className="mt-4">
           Vaarthai vadivam vanthavar
           <br />
           Vinnai thaandi kuthithavar
@@ -356,7 +397,7 @@ const songs = {
           Jeevan thanthu ennai meetavar
         </p>
         <p className="mt-6">
-          1.Valiyai neekum (poakum) maruthuvar
+          1. Valiyai neekum (poakum) maruthuvar
           <br />
           Vaakuthatham tharubavar
           <br />
@@ -365,7 +406,7 @@ const songs = {
           Ullam kavarntha ithaya naayagar
         </p>
         <p className="mt-6">
-          2.Vaalibathil ennai kandavar
+          2. Vaalibathil ennai kandavar
           <br />
           Naraivayathu varai thaangugindravar
           <br />
@@ -378,15 +419,24 @@ const songs = {
   },
   5: {
     subtitle: (
-      <span>
-        <strong>
-          உனக்கு ஒரு தெய்வம் உண்டு தெரியுமா - Unakku oru Dheivam undu theriyuma
-        </strong>
-      </span>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          marginTop: "2rem",
+        }}
+      >
+        <span style={{ textAlign: "center" }}>
+          <strong>
+            உனக்கு ஒரு தெய்வம் உண்டு தெரியுமா - Unakku oru Dheivam undu
+            theriyuma
+          </strong>
+        </span>
+      </div>
     ),
     lyrics: (
       <>
-        <p mt-4>
+        <p className="mt-4">
           உனக்கு ஒரு தெய்வம் உண்டு தெரியுமா - மனமே
           <br />
           உனக்கு ஒரு நேசர் உண்டு புரியுமா மனமே
@@ -402,7 +452,7 @@ const songs = {
           உன் தகப்பனையும் தாயையும் காக்க வைத்தவர் - உனக்கு ஒரு
         </p>
         <p className="mt-6">
-          2.தாயின் வயிற்றில் இருக்கும் போது தாங்கி கொண்டவர்
+          2. தாயின் வயிற்றில் இருக்கும் போது தாங்கி கொண்டவர்
           <br />
           தவழ்ந்து நான் ஊரும் போது கரம்பிடித்தவர்
           <br />
@@ -411,7 +461,7 @@ const songs = {
           கால்கள் ஊன்றி நடக்கும் போது - உனக்கு ஒரு
         </p>
         <p className="mt-6">
-          3.பாவத்தை நான் பார்த்தபோது பதறி போனவர்
+          3. பாவத்தை நான் பார்த்தபோது பதறி போனவர்
           <br />
           athai paalai poala kuditha poothu கதறி துடித்தவர்
           <br />
@@ -420,18 +470,25 @@ const songs = {
           மீட்டு என்னை எப்போது நடக்கும் - உனக்கு ஒரு
         </p>
 
-        <p className="mt-8 text-center">
-          <strong style={{ fontSize: "1.875rem" }}>
-            Unakku oru Dheivam undu theriyuma Lyrics in English
-          </strong>
-        </p>
-        <p mt-4>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "2rem",
+          }}
+        >
+          <p style={{ textAlign: "center", fontSize: "1.875rem" }}>
+            <strong>Unakku oru Dheivam undu theriyuma Lyrics in English</strong>
+          </p>
+        </div>
+
+        <p className="mt-4">
           Unakku oru Dheivam undu theriyuma - manamea
           <br />
           Unakku oru neasar undu puriyuma manamea
         </p>
         <p className="mt-6">
-          1.Ulagam orunaal thoondrum munnea mun kurithavar
+          1. Ulagam orunaal thoondrum munnea mun kurithavar
           <br />
           Ulagathilea neeyum thoondra naal kurithavar
           <br />
@@ -440,7 +497,7 @@ const songs = {
           Un thagapanaiyum thaaiyaiyum kaaka vaithavar - Unakku oru
         </p>
         <p className="mt-6">
-          2.Thaayin vayittril irukkum poothu thaangi kondavar
+          2. Thaayin vayittril irukkum poothu thaangi kondavar
           <br />
           Thavalnthu naan oorum poothu karampidithavar
           <br />
@@ -449,7 +506,7 @@ const songs = {
           Kaalgal oondri nadakum poothu paathukaapavar - Unakku oru
         </p>
         <p className="mt-6">
-          3.Paavathai naan paarthapoothu pathari poonavar
+          3. Paavathai naan paarthapoothu pathari poonavar
           <br />
           Athai paalai poola kuditha poothu kathari thudithavar
           <br />
@@ -462,13 +519,21 @@ const songs = {
   },
   6: {
     subtitle: (
-      <span>
-        <strong>உம்மை போல் உம்மை போல் - Ummai pol Ummai pol</strong>
-      </span>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          marginTop: "2rem",
+        }}
+      >
+        <span style={{ textAlign: "center" }}>
+          <strong>உம்மை போல் உம்மை போல் - Ummai pol Ummai pol</strong>
+        </span>
+      </div>
     ),
     lyrics: (
       <>
-        <p mt-4>
+        <p className="mt-4">
           உம்மை போல் உம்மை போல்
           <br />
           என்னை மாற்றும் இயேசுவே
@@ -481,12 +546,12 @@ const songs = {
           நானும் கேட்க வேண்டும்மே
         </p>
         <p className="mt-6">
-          2.ஜனங்களை பார்த்ததும் மனதுருகி ஜெபித்தது போல்
+          2. ஜனங்களை பார்த்ததும் மனதுருகி ஜெபித்தது போல்
           <br />
           நானும் ஜெபிக்க வேண்டும்மே
         </p>
         <p className="mt-6">
-          3.காடு மாலைகள் எல்லாம் ஊழியங்கள் செய்தது போல்
+          3. காடு மாலைகள் எல்லாம் ஊழியங்கள் செய்தது போல்
           <br />
           நானும் (உளியம்) செய்ய வேண்டும்மே
         </p>
@@ -500,12 +565,19 @@ const songs = {
           <br />
           உம் சித்தம் செய்ய வேண்டும்மே
         </p>
-        <p className="mt-8 text-center">
-          <strong style={{ fontSize: "1.875rem" }}>
-            Ummai Pol Ummai Pol Lyrics in English
-          </strong>
-        </p>
-        <p mt-4>
+
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "2rem",
+          }}
+        >
+          <p style={{ textAlign: "center", fontSize: "1.875rem" }}>
+            <strong>Ummai Pol Ummai Pol Lyrics in English</strong>
+          </p>
+        </div>
+        <p className="mt-4">
           Ummai pol ummai pol
           <br />
           Ennai maatrum yeasuvea
@@ -518,7 +590,7 @@ const songs = {
           Naanum keatka veandumea
         </p>
         <p className="mt-6">
-          2.Janangalai paarthathum manathurugi jebithathu pol
+          2. Janangalai paarthathum manathurugi jebithathu pol
           <br />
           Naanum jebikka veandumea
         </p>
@@ -533,7 +605,7 @@ const songs = {
           Naanum seiya veandumea
         </p>
         <p className="mt-6">
-          5.Pithaavin sithathai kathchithamaai mudithathu pol
+          5. Pithaavin sithathai kathchithamaai mudithathu pol
           <br />
           Um sitham seiya veandumea
         </p>
@@ -542,21 +614,29 @@ const songs = {
   },
   7: {
     subtitle: (
-      <span>
-        <strong>
-          சீயோன் குமாரத்தி நீ கெம்பீரமாய் பாடு - Seeyoon kumaarathi nee
-          kembeeramaai paadu
-        </strong>
-      </span>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          marginTop: "2rem",
+        }}
+      >
+        <span style={{ textAlign: "center" }}>
+          <strong>
+            சீயோன் குமாரத்தி நீ கெம்பீரமாய் பாடு - Seeyoon kumaarathi nee
+            kembeeramaai paadu
+          </strong>
+        </span>
+      </div>
     ),
     lyrics: (
       <>
-        <p mt-4>
+        <p className="mt-4">
           சீயோன் குமாரத்தி நீ கெம்பீரமாய் பாடு
           <br />
           கார்த்தர் வந்து உன் நடுவில் வாசம் பண்ணுவார்
         </p>
-        <p mt-4>
+        <p className="mt-4">
           துதிபாடுவாய் துதிபாடுவாய்
           <br />
           நன்றியோடும் கண்ணீரோடும் துதிபாடுவாய்
@@ -588,17 +668,25 @@ const songs = {
           <br />
           விடுதலை செய்வார் - துதி பாடுவாய்
         </p>
-        <p className="mt-8 text-center">
-          <strong style={{ fontSize: "1.875rem" }}>
-            Seeyoon kumaarathi nee kembeeramaai paadu Lyrics in English
-          </strong>
-        </p>
-        <p mt-4>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "2rem",
+          }}
+        >
+          <p style={{ textAlign: "center", fontSize: "1.875rem" }}>
+            <strong>
+              Seeyoon kumaarathi nee kembeeramaai paadu Lyrics in English
+            </strong>
+          </p>
+        </div>
+        <p className="mt-4">
           Seeyoon kumaarathi nee kembeeramaai paadu
           <br />
           Karthar vanthu un naduvil vaasam pannuvaar
         </p>
-        <p mt-4>
+        <p className="mt-4">
           Thuthipaaduvaai thuthipaaduvaai
           <br />
           Nandriyoodum kaneerodum thuthipaaduvaai
@@ -635,15 +723,23 @@ const songs = {
   },
   8: {
     subtitle: (
-      <span>
-        <strong>
-          பரிசுத்தரே புண்ணியம் செய்தீரே - Parisutharea punniyam seitheerea
-        </strong>
-      </span>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          marginTop: "2rem",
+        }}
+      >
+        <span style={{ textAlign: "center" }}>
+          <strong>
+            பரிசுத்தரே புண்ணியம் செய்தீரே - Parisutharea punniyam seitheerea
+          </strong>
+        </span>
+      </div>
     ),
     lyrics: (
       <>
-        <p mt-4>
+        <p className="mt-4">
           பரிசுத்தரே புண்ணியம் செய்தீரே
           <br />
           பரிகாரியே, பாவம் தொலைத்தீரே
@@ -684,12 +780,18 @@ const songs = {
           <br />
           தரிசனங்களாய் பெற்று கொல்கிறேன்
         </p>
-        <p className="mt-8 text-center">
-          <strong style={{ fontSize: "1.875rem" }}>
-            Parisutharea punniyam seitheerea Lyrics in English
-          </strong>
-        </p>
-        <p mt-4>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "2rem",
+          }}
+        >
+          <p style={{ textAlign: "center", fontSize: "1.875rem" }}>
+            <strong>Parisutharea punniyam seitheerea Lyrics in English</strong>
+          </p>
+        </div>
+        <p className="mt-4">
           Parisutharea punniyam seitheerea
           <br />
           Parigaareeyea, paavam tholaitheerea
@@ -719,7 +821,7 @@ const songs = {
           <br />
           Theemaiyin kaaranam theriyathathaal
           <br />
-          Thinam thoorum nandri solgirean
+          Thinathoorum nandri solgirean
         </p>
         <p className="mt-6">
           4. Belaveenan ennai thottathaal
@@ -735,15 +837,24 @@ const songs = {
   },
   9: {
     subtitle: (
-      <span>
-        <strong>
-          என் தாயும் தகப்பனும் கைவிட்டாலும் - En thaayum thagapanum kaivittaalum
-        </strong>
-      </span>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          marginTop: "2rem",
+        }}
+      >
+        <span style={{ textAlign: "center" }}>
+          <strong>
+            என் தாயும் தகப்பனும் கைவிட்டாலும் - En thaayum thagapanum
+            kaivittaalum
+          </strong>
+        </span>
+      </div>
     ),
     lyrics: (
       <>
-        <p mt-4>
+        <p className="mt-4">
           என் தாயும் தகப்பனும் கைவிட்டாலும்
           <br />
           கர்த்தாரோ அனுதினமும் நடைதி செல்வார்
@@ -788,136 +899,201 @@ const songs = {
           <br />
           மேன்மையாக வைக்கிறார்
         </p>
-        <p className="mt-8 text-center">
-          <strong style={{ fontSize: "1.875rem" }}>
-            En thaayum thagapanum kaivittaalum Lyrics in English
-          </strong>
-        </p>
-        <p mt-4>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "2rem",
+          }}
+        >
+          <p style={{ textAlign: "center", fontSize: "1.875rem" }}>
+            <strong>
+              En thaayum thagapanum kaivittaalum Lyrics in English
+            </strong>
+          </p>
+        </div>
+        <p className="mt-4">
           En thaayum thagapanum kaivittaalum
           <br />
-          Kartharoo anuthinamum nadathi selvaar
+          Karthaaro anuthinamum nadai seilvaar
           <br />
-          En anbarum nanbarum vittuvittu poonaalum
+          En anbarum nanbarum vittuvittu poanaalum
           <br />
-          Kartharoo en karathai pidithiduvar
+          Karthro en karathai pidithiduvaan
         </p>
         <p className="mt-6">
-          1. Suttri varum ulagil avar
+          1. Suthri varum ulakil avar
           <br />
-          Ennai suttri varugiraar
+          Ennai suthugiraar
           <br />
-          Sugamaai vaalnthuvida
+          Sugam vaazhnthuvita
           <br />
-          Soolnilaigal tharugiraar
+          Sooznilai thaarugiraar
         </p>
         <p className="mt-6">
-          2. Annam thaneer aagaram
+          2. Annan thanneer aakaaram
           <br />
-          Anuthinamum tharugirar
+          Anuthinamum tharugiraar
           <br />
-          Athigaalai mannaavaal
+          Athikaalai mannaval
           <br />
-          Thirupthipaduthi magilgiraar
+          Thiruppadiththidum magizhgiraar
         </p>
         <p className="mt-6">
-          3. Kuppaiyil iruntha ennai
+          3. Kuppaiyil irundha ennai
           <br />
-          Koopurathil vaikiraar
+          Koppuraththil vaikkiraar
           <br />
-          Raajaakaloodu amara
+          Raajakkalodhu amara
           <br />
-          Singaasanam tharugiraar
+          Singaasanam tharuvaan
         </p>
         <p className="mt-6">
-          4. Thaayai paarkilum
+          4. Thaayi paarkilum
           <br />
-          Paasathodu paarkiraar
+          Paasaththodu paarkiraar
           <br />
-          Thanthaiyai paarkilum
+          Thandai paarkilum
           <br />
-          Meanmaiyaaga vaikiraar
+          Maanmaiyaga vaikkiraar
         </p>
       </>
     ),
   },
   10: {
     subtitle: (
-      <span>
-        <strong>ஆரோக்கியம் ஆரோக்கியம் - Aarokiyam Aarokiyam</strong>
-      </span>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          marginTop: "2rem",
+        }}
+      >
+        <span style={{ textAlign: "center" }}>
+          <strong>
+            ஆசீர்வாதத்தைப் பெற்றவன் தானே - Aaseervaadhathai perraavan thaanae
+          </strong>
+        </span>
+      </div>
     ),
     lyrics: (
       <>
-        <p mt-4>
-          ஆரோக்கியம் ஆரோக்கியம்
+        <p className="mt-4">
+          ஆசீர்வாதத்தைப் பெற்றவன் தானே
           <br />
-          அப்பாவின் சமூகத்தில் ஆரோக்கியம்
-          <br />
-          ஆரோக்கியம் ஆரோக்கியம்
-          <br />
-          அனுதினம் வாழ்வில் ஆரோக்கியம்
+          ஆனந்தத்தைப் பெற்றவன் தானே
         </p>
         <p className="mt-6">
-          1. யேகோவா ராஃபா எண்ட்றால் ஆரோக்கியம்
+          1. உங்கள் ஆசீர்வாதத்தை
           <br />
-          இயேசு என்ற பெயரை சொன்னாள்
+          என்னை அருளிக்கொண்டு
           <br />
-          ஆரோக்கியம்
+          உலகத்தைச் செழித்து
+          <br />
+          வாழ்க்கை அதிர்ச்சியுடன் காப்பேன்
         </p>
         <p className="mt-6">
-          2. பார்த்தேமேயு குருடனுக்கு ஆரோக்கியம்
+          2. நாமதோ பரிசுத்தமாய்
           <br />
-          பெரும்பாடுள்ள பெண்ணுக்கு ஆரோக்கியம்
+          பிரார்த்தனைகள் தீர்த்தவர்
+          <br />
+          உமக்கு உதவுவேன்
+          <br />
+          உன் கரங்கள் பொங்குமே
         </p>
         <p className="mt-6">
-          3. பேதுரு மாமிக்கு ஆரோக்கியம்
+          3. பிறர் என்னைப் பிடிக்காத போது
           <br />
-          கொன்ன வாயனுக்கு ஆரோக்கியம்
-        </p>
-        <p className="mt-8 text-center">
-          <strong style={{ fontSize: "1.875rem" }}>
-            Aarokiyam Aarokiyam Lyrics in English
-          </strong>
-        </p>
-        <p mt-4>
-          Aarokiyam aarokiym
+          படிப்படை அமைக்க வைய
           <br />
-          Appavin samugathil aarokiyam
+          உன் திருவடிகள்
           <br />
-          Aarokiyam aarokiyam
-          <br />
-          Anuthinam vaalvil aarokiyam
+          எல்லாம் சாத்துவேன்
         </p>
         <p className="mt-6">
-          1. Yehovah raapha endraal aarokiyam
+          4. என்னை தேவைப்பட்டாலும்
           <br />
-          Yeasu endra peayarai sonnal
+          தோழமை தரக்கொண்டு
           <br />
-          Aarokiyam
+          ஆசீர்வாதங்களைச் சொல்லுவேன்
+          <br />
+          எவரும் தந்தாரே
+        </p>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "2rem",
+          }}
+        >
+          <p style={{ textAlign: "center", fontSize: "1.875rem" }}>
+            <strong>
+              Aaseervaadhathai perraavan thaanae Lyrics in English
+            </strong>
+          </p>
+        </div>
+        <p className="mt-4">
+          Aaseervaadhathai perraavan thaanae
+          <br />
+          Aanandathai perraavan thaanae
         </p>
         <p className="mt-6">
-          2. Parthemeeau kurudanukku aarokiyam
+          1. Ungal aaseervaadhathai
           <br />
-          Pearumpaadulla pennukku aarokiyam
+          Ennai arulikkondu
+          <br />
+          Ulagatthaich chezhithu
+          <br />
+          Vaalkaai adhirschiyudan kaappaean
         </p>
         <p className="mt-6">
-          3. Peathuru maamiku aarokiyam
+          2. Naamaththoa parisuthamaai
           <br />
-          Konna vaayanukku aarokiyam
+          Piraarthanaigal theerththavaran
+          <br />
+          Umakku udhaviyaen
+          <br />
+          Un karangal pongume
+        </p>
+        <p className="mt-6">
+          3. Pirar ennai pidikkaththaal
+          <br />
+          Padippadai amaikka vai
+          <br />
+          Un thiruvadigal
+          <br />
+          Ellam saaththuvaen
+        </p>
+        <p className="mt-6">
+          4. Ennai thevaiyappattalum
+          <br />
+          Thozhamaai tharak kondu
+          <br />
+          Aaseervaadhangalaich solluvean
+          <br />
+          Evarum thandhaare
         </p>
       </>
     ),
   },
+
   11: {
     subtitle: (
-      <span>
-        <strong>அன்பரே... நன்பரே… - Aanbarea... nanbarea..</strong>
-      </span>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          marginTop: "2rem",
+        }}
+      >
+        <span style={{ textAlign: "center" }}>
+          <strong>அன்பரே... நன்பரே… - Aanbarea... nanbarea..</strong>
+        </span>
+      </div>
     ),
     lyrics: (
       <>
-        <p mt-4>
+        <p className="mt-4">
           அன்பரே... நன்பரே...
           <br />
           அழகே... ஆருயிரே
@@ -942,12 +1118,18 @@ const songs = {
           <br />
           ஆனீயடிக்க தந்தீரையா
         </p>
-        <p className="mt-8 text-center">
-          <strong style={{ fontSize: "1.875rem" }}>
-            Aanbarea... Nanbarea.. Lyrics in English
-          </strong>
-        </p>
-        <p mt-4>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "2rem",
+          }}
+        >
+          <p style={{ textAlign: "center", fontSize: "1.875rem" }}>
+            <strong>Aanbarea... Nanbarea.. Lyrics in English</strong>
+          </p>
+        </div>
+        <p className="mt-4">
           Aanbarea... nanbarea...
           <br />
           Aalagea... aaruyirea
@@ -977,15 +1159,23 @@ const songs = {
   },
   12: {
     subtitle: (
-      <span>
-        <strong>
-          என் ஆசையெல்லாம் நீர்தானயையா - En aasaigal ellam neer dhaanaiyayaa
-        </strong>
-      </span>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          marginTop: "2rem",
+        }}
+      >
+        <span style={{ textAlign: "center" }}>
+          <strong>
+            என் ஆசையெல்லாம் நீர்தானயையா - En aasaigal ellam neer dhaanaiyayaa
+          </strong>
+        </span>
+      </div>
     ),
     lyrics: (
       <>
-        <p mt-4>
+        <p className="mt-4">
           என் ஆசையெல்லாம் நீர்தானயையா
           <br />
           உம் ஆலயத்தில் தங்கியிருப்பேன்
@@ -1027,12 +1217,20 @@ const songs = {
           கண்ணீரை துடைத்த இயேசுவே
           <br />- என் ஆசையெல்லாம்
         </p>
-        <p className="mt-8 text-center">
-          <strong style={{ fontSize: "1.875rem" }}>
-            En aasaigal ellam neer dhaanaiyayaa Lyrics in English
-          </strong>
-        </p>
-        <p mt-4>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "2rem",
+          }}
+        >
+          <p style={{ textAlign: "center", fontSize: "1.875rem" }}>
+            <strong>
+              En aasaigal ellam neer dhaanaiyayaa Lyrics in English
+            </strong>
+          </p>
+        </div>
+        <p className="mt-4">
           En aasaigal ellam neer dhaanaiyayaa
           <br />
           Um aalayathil thangi iruppen...
@@ -1079,16 +1277,24 @@ const songs = {
   },
   13: {
     subtitle: (
-      <span>
-        <strong>
-          என்ன சுத்தி என்ன சுத்தி என்னாலமோ நடக்குது - Enna suthhi enna suthi
-          ennalaamoo nadakuthu
-        </strong>
-      </span>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          marginTop: "2rem",
+        }}
+      >
+        <span style={{ textAlign: "center" }}>
+          <strong>
+            என்ன சுத்தி என்ன சுத்தி என்னாலமோ நடக்குது - Enna suthhi enna suthi
+            ennalaamoo nadakuthu
+          </strong>
+        </span>
+      </div>
     ),
     lyrics: (
       <>
-        <p mt-4>
+        <p className="mt-4">
           என்ன சுத்தி என்ன சுத்தி என்னாலமோ
           <br />
           நடக்குது
@@ -1116,12 +1322,20 @@ const songs = {
           <br />
           என்னமோ நடக்கின்றது (2)
         </p>
-        <p className="mt-8 text-center">
-          <strong style={{ fontSize: "1.875rem" }}>
-            Enna suthhi enna suthi ennalaamoo nadakuthu Lyrics in English
-          </strong>
-        </p>
-        <p mt-4>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "2rem",
+          }}
+        >
+          <p style={{ textAlign: "center", fontSize: "1.875rem" }}>
+            <strong>
+              Enna suthhi enna suthi ennalaamoo nadakuthu Lyrics in English
+            </strong>
+          </p>
+        </div>
+        <p className="mt-4">
           Enna suthhi enna suthi ennalaamoo
           <br />
           nadakuthu
@@ -1154,13 +1368,21 @@ const songs = {
   },
   14: {
     subtitle: (
-      <span>
-        <strong>என்னை பாட சொல்லி - Ennai paada solli</strong>
-      </span>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          marginTop: "2rem",
+        }}
+      >
+        <span style={{ textAlign: "center" }}>
+          <strong>என்னை பாட சொல்லி - Ennai paada solli</strong>
+        </span>
+      </div>
     ),
     lyrics: (
       <>
-        <p mt-4>
+        <p className="mt-4">
           என்னை பாட சொல்லி
           <br />
           பாட்டு கேட்கும் தெய்வமே...
@@ -1202,12 +1424,18 @@ const songs = {
           <br />
           கூட்டை கலைத்து பார்க்கவிதிரே (2)
         </p>
-        <p className="mt-8 text-center">
-          <strong style={{ fontSize: "1.875rem" }}>
-            Ennai paada solli Lyrics in English
-          </strong>
-        </p>
-        <p mt-4>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "2rem",
+          }}
+        >
+          <p style={{ textAlign: "center", fontSize: "1.875rem" }}>
+            <strong>Ennai paada solli Lyrics in English</strong>
+          </p>
+        </div>
+        <p className="mt-4">
           Ennai paada solli
           <br />
           paatu ketkum deivamea...
@@ -1254,13 +1482,21 @@ const songs = {
   },
   15: {
     subtitle: (
-      <span>
-        <strong>ஒருமுறை ஒருமுறை - Orumurai Orumurai</strong>
-      </span>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          marginTop: "2rem",
+        }}
+      >
+        <span style={{ textAlign: "center" }}>
+          <strong>ஒருமுறை ஒருமுறை - Orumurai Orumurai</strong>
+        </span>
+      </div>
     ),
     lyrics: (
       <>
-        <p mt-4>
+        <p className="mt-4">
           ஒருமுறை ஒருமுறை
           <br />
           அவெரின் சத்தம் நீ கேட்டாள்
@@ -1296,12 +1532,18 @@ const songs = {
           <br />
           எரியும் ஒலியே நீ (2)
         </p>
-        <p className="mt-8 text-center">
-          <strong style={{ fontSize: "1.875rem" }}>
-            Orumurai Orumurai Lyrics in English
-          </strong>
-        </p>
-        <p mt-4>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "2rem",
+          }}
+        >
+          <p style={{ textAlign: "center", fontSize: "1.875rem" }}>
+            <strong>Orumurai Orumurai Lyrics in English</strong>
+          </p>
+        </div>
+        <p className="mt-4">
           Orumurai orumurai
           <br />
           avarin satham nee keatal
@@ -1342,15 +1584,24 @@ const songs = {
   },
   16: {
     subtitle: (
-      <span>
-        <strong>
-          எதற்கெல்லாம் ஜெபம் தினம் செய்வது - Etharkellam Jebam Thinama Seivathu
-        </strong>
-      </span>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          marginTop: "2rem",
+        }}
+      >
+        <span style={{ textAlign: "center" }}>
+          <strong>
+            எதற்கெல்லாம் ஜெபம் தினம் செய்வது - Etharkellam Jebam Thinama
+            Seivathu
+          </strong>
+        </span>
+      </div>
     ),
     lyrics: (
       <>
-        <p mt-4>
+        <p className="mt-4">
           எதற்கெல்லாம் ஜெபம் தினம் செய்வது
           <br />
           எதையெல்லாம் சொல்லி சொல்லி ஜெபிப்பது
@@ -1382,12 +1633,20 @@ const songs = {
           <br />
           எதிர்ப்பார்ப்பு ஜெபமாகட்டும்
         </p>
-        <p className="mt-8 text-center">
-          <strong style={{ fontSize: "1.875rem" }}>
-            Etharkellam Jebam Thinama Seivathu Lyrics in English
-          </strong>
-        </p>
-        <p mt-4>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "2rem",
+          }}
+        >
+          <p style={{ textAlign: "center", fontSize: "1.875rem" }}>
+            <strong>
+              Etharkellam Jebam Thinama Seivathu Lyrics in English
+            </strong>
+          </p>
+        </div>
+        <p className="mt-4">
           Etharkellam jebam thinam seivathu
           <br />
           Ethaiyellam solli solli jebipathu
@@ -1424,13 +1683,21 @@ const songs = {
   },
   17: {
     subtitle: (
-      <span>
-        <strong>எங்கும் நிறைந்தவரே - Engum Nirainthavarea</strong>
-      </span>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          marginTop: "2rem",
+        }}
+      >
+        <span style={{ textAlign: "center" }}>
+          <strong>எங்கும் நிறைந்தவரே - Engum Nirainthavarea</strong>
+        </span>
+      </div>
     ),
     lyrics: (
       <>
-        <p mt-4>
+        <p className="mt-4">
           எங்கும் நிறைந்தவரே - உம்மை
           <br />
           ஆடிப்பாடி ஆராதிப்பேன்
@@ -1467,12 +1734,18 @@ const songs = {
           ரெத்தத்தாலே கழுவி விடுகீர்
           <br />- ஆராதிப்போம்
         </p>
-        <p className="mt-8 text-center">
-          <strong style={{ fontSize: "1.875rem" }}>
-            Engum Nirainthavarea Lyrics in English
-          </strong>
-        </p>
-        <p mt-4>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "2rem",
+          }}
+        >
+          <p style={{ textAlign: "center", fontSize: "1.875rem" }}>
+            <strong>Engum Nirainthavarea Lyrics in English</strong>
+          </p>
+        </div>
+        <p className="mt-4">
           Engum nirainthavarea - ummai
           <br />
           Aadipaadi aaraathipean
@@ -1514,15 +1787,23 @@ const songs = {
   },
   18: {
     subtitle: (
-      <span>
-        <strong>
-          பாரதம் பாரதம் பாரத தேசம் - Baaratham Baaratham Baaratha Dhesam
-        </strong>
-      </span>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          marginTop: "2rem",
+        }}
+      >
+        <span style={{ textAlign: "center" }}>
+          <strong>
+            பாரதம் பாரதம் பாரத தேசம் - Baaratham Baaratham Baaratha Dhesam
+          </strong>
+        </span>
+      </div>
     ),
     lyrics: (
       <>
-        <p mt-4>
+        <p className="mt-4">
           பாரதம் பாரதம் பாரத தேசம்
           <br />
           நம் பரிசுதாரம் இயேசுவுக்கு
@@ -1573,12 +1854,20 @@ const songs = {
           <br />
           வேண்டும் (2)
         </p>
-        <p className="mt-8 text-center">
-          <strong style={{ fontSize: "1.875rem" }}>
-            Baaratham Baaratham Baaratha Dhesam Lyrics in English
-          </strong>
-        </p>
-        <p mt-4>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "2rem",
+          }}
+        >
+          <p style={{ textAlign: "center", fontSize: "1.875rem" }}>
+            <strong>
+              Baaratham Baaratham Baaratha Dhesam Lyrics in English
+            </strong>
+          </p>
+        </div>
+        <p className="mt-4">
           Baaratham baaratham baaratha deasam
           <br />
           Nam parisutharaam yeasuvukku
@@ -1634,16 +1923,24 @@ const songs = {
   },
   19: {
     subtitle: (
-      <span>
-        <strong>
-          திருச்சபையே திருச்சபையே ஜெபிப்பாயா - Thiruchabayea Thiruchabayea
-          Jebippaye
-        </strong>
-      </span>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          marginTop: "2rem",
+        }}
+      >
+        <span style={{ textAlign: "center" }}>
+          <strong>
+            திருச்சபையே திருச்சபையே ஜெபிப்பாயா - Thiruchabayea Thiruchabayea
+            Jebippaye
+          </strong>
+        </span>
+      </div>
     ),
     lyrics: (
       <>
-        <p mt-4>
+        <p className="mt-4">
           திருச்சபையே திருச்சபையே
           <br />
           ஜெபிப்பாயா
@@ -1683,12 +1980,20 @@ const songs = {
           <br />
           ஆவியானவர் வழிநடத்துகிறார்
         </p>
-        <p className="mt-8 text-center">
-          <strong style={{ fontSize: "1.875rem" }}>
-            Thiruchabayea Thiruchabayea Jebippaye Lyrics in English
-          </strong>
-        </p>
-        <p mt-4>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "2rem",
+          }}
+        >
+          <p style={{ textAlign: "center", fontSize: "1.875rem" }}>
+            <strong>
+              Thiruchabayea Thiruchabayea Jebippaye Lyrics in English
+            </strong>
+          </p>
+        </div>
+        <p className="mt-4">
           Thiruchabayea thiruchabayea
           <br />
           jebippayea
@@ -1735,13 +2040,21 @@ const songs = {
   },
   20: {
     subtitle: (
-      <span>
-        <strong>தா எண்டரல்லவா கேட்டார் - Thaa Endrallavaa Kaetaar</strong>
-      </span>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          marginTop: "2rem",
+        }}
+      >
+        <span style={{ textAlign: "center" }}>
+          <strong>தா எண்டரல்லவா கேட்டார் - Thaa Endrallavaa Kaetaar</strong>
+        </span>
+      </div>
     ),
     lyrics: (
       <>
-        <p mt-4>
+        <p className="mt-4">
           தா எண்டரல்லவா கேட்டார்
           <br />
           தரமாடேனென்று எப்படி தீர்ப்பான் - இயேசு
@@ -1771,12 +2084,18 @@ const songs = {
           <br />
           பஞ்ச காலம் தீரு மட்டும் பெருக செய்தார் (2)
         </p>
-        <p className="mt-8 text-center">
-          <strong style={{ fontSize: "1.875rem" }}>
-            Thaa Endrallavaa Kaetaar Lyrics in English
-          </strong>
-        </p>
-        <p mt-4>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "2rem",
+          }}
+        >
+          <p style={{ textAlign: "center", fontSize: "1.875rem" }}>
+            <strong>Thaa Endrallavaa Kaetaar Lyrics in English</strong>
+          </p>
+        </div>
+        <p className="mt-4">
           Thaa endrallavaa kaetaar
           <br />
           Tharamaateanendru eppadi solvean - Yeasu
@@ -1811,15 +2130,23 @@ const songs = {
   },
   21: {
     subtitle: (
-      <span>
-        <strong>
-          துதிப்பதாலே துக்கப்படமாட்டேன் - Thuthipathaalea Thukkapadamaatean
-        </strong>
-      </span>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          marginTop: "2rem",
+        }}
+      >
+        <span style={{ textAlign: "center" }}>
+          <strong>
+            துதிப்பதாலே துக்கப்படமாட்டேன் - Thuthipathaalea Thukkapadamaatean
+          </strong>
+        </span>
+      </div>
     ),
     lyrics: (
       <>
-        <p mt-4>
+        <p className="mt-4">
           துதிப்பதாலே துக்கப்படமாட்டேன் - நான்
           <br />
           ஜெபிப்பதாலே வெட்கப்படமாட்டேன்
@@ -1859,12 +2186,18 @@ const songs = {
           <br />
           பாவிகளில் அன்பு கூறுவேன்
         </p>
-        <p className="mt-8 text-center">
-          <strong style={{ fontSize: "1.875rem" }}>
-            Thuthipathaalea Thukkapadamaatean Lyrics in English
-          </strong>
-        </p>
-        <p mt-4>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "2rem",
+          }}
+        >
+          <p style={{ textAlign: "center", fontSize: "1.875rem" }}>
+            <strong>Thuthipathaalea Thukkapadamaatean Lyrics in English</strong>
+          </p>
+        </div>
+        <p className="mt-4">
           Thuthipathaalea thukkapadamaatean - naan
           <br />
           Jebippathaalea vetkapadamaatean
@@ -1909,13 +2242,21 @@ const songs = {
   },
   22: {
     subtitle: (
-      <span>
-        <strong>மொழிகள் பல பயன்படுதி - Moligal Pala Bayanpaduthi</strong>
-      </span>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          marginTop: "2rem",
+        }}
+      >
+        <span style={{ textAlign: "center" }}>
+          <strong>மொழிகள் பல பயன்படுதி - Moligal Pala Bayanpaduthi</strong>
+        </span>
+      </div>
     ),
     lyrics: (
       <>
-        <p mt-4>
+        <p className="mt-4">
           மொழிகள் பல பயன்படுதி
           <br />
           செவிகள் கேட்க பாடுகிரேன்
@@ -1955,12 +2296,18 @@ const songs = {
           <br />
           உம் பிள்ளையாக பாதுகாத்தீர்!
         </p>
-        <p className="mt-8 text-center">
-          <strong style={{ fontSize: "1.875rem" }}>
-            Moligal Pala Bayanpaduthi Lyrics in English
-          </strong>
-        </p>
-        <p mt-4>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "2rem",
+          }}
+        >
+          <p style={{ textAlign: "center", fontSize: "1.875rem" }}>
+            <strong>Moligal Pala Bayanpaduthi Lyrics in English</strong>
+          </p>
+        </div>
+        <p className="mt-4">
           Moligal pala bayanpaduthii
           <br />
           Sevigal keatka paadugirean
@@ -2005,16 +2352,24 @@ const songs = {
   },
   23: {
     subtitle: (
-      <span>
-        <strong>
-          கிருபை என்று சொன்னாலே எத்தனை வலிமை - Kirubai Endra Sollilaa Etnai
-          Valimai
-        </strong>
-      </span>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          marginTop: "2rem",
+        }}
+      >
+        <span style={{ textAlign: "center" }}>
+          <strong>
+            கிருபை என்று சொன்னாலே எத்தனை வலிமை - Kirubai Endra Sollilaa Etnai
+            Valimai
+          </strong>
+        </span>
+      </div>
     ),
     lyrics: (
       <>
-        <p mt-4>
+        <p className="mt-4">
           கிருபை என்று சொல்லிலே எத்தனை வலிமை...
           <br />
           கிருபையோடு வாழ்ந்து விட்டாள் எத்தனாய்
@@ -2060,12 +2415,20 @@ const songs = {
           வார்த்தையாலே நடத்தி செல்வது உங்க கிருபை
           <br />- கிருபை...(4)
         </p>
-        <p className="mt-8 text-center">
-          <strong style={{ fontSize: "1.875rem" }}>
-            Kirubai Endra Sollilaa Etnai Valimai Lyrics in English
-          </strong>
-        </p>
-        <p mt-4>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "2rem",
+          }}
+        >
+          <p style={{ textAlign: "center", fontSize: "1.875rem" }}>
+            <strong>
+              Kirubai Endra Sollilaa Etnai Valimai Lyrics in English
+            </strong>
+          </p>
+        </div>
+        <p className="mt-4">
           Kirubai endra sollilaa etthanai valimai
           <br />
           Kirubaiyoodu vaalnthu vittaal etthanai
@@ -2116,16 +2479,24 @@ const songs = {
   },
   24: {
     subtitle: (
-      <span>
-        <strong>
-          ஜெபிப்பவனையும் துதிப்பவனையும் நோக்கி பார்ப்பவரே - Jebippavanaiyum
-          Thuthipavanaiyum Nooki Paarpavarea
-        </strong>
-      </span>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          marginTop: "2rem",
+        }}
+      >
+        <span style={{ textAlign: "center" }}>
+          <strong>
+            ஜெபிப்பவனையும் துதிப்பவனையும் நோக்கி பார்ப்பவரே - Jebippavanaiyum
+            Thuthipavanaiyum Nooki Paarpavarea
+          </strong>
+        </span>
+      </div>
     ),
     lyrics: (
       <>
-        <p mt-4>
+        <p className="mt-4">
           ஜெபிப்பவனையும் துதிப்பவனையும் நோக்கி பார்ப்பவரே
           <br />
           எங்கல் ஜெபங்களுக்குப் பாதியில் தந்து நடத்தி செண்ட்ரிடுமியா
@@ -2153,12 +2524,21 @@ const songs = {
           <br />
           ஜெபிக்கிறோம் (தேசத்தை) ஜெபிக்கிறோம்
         </p>
-        <p className="mt-8 text-center">
-          <strong style={{ fontSize: "1.875rem" }}>
-            Jebippavanaiyum Thuthipavanaiyum Nooki Paarpavarea Lyrics in English
-          </strong>
-        </p>
-        <p mt-4>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "2rem",
+          }}
+        >
+          <p style={{ textAlign: "center", fontSize: "1.875rem" }}>
+            <strong>
+              Jebippavanaiyum Thuthipavanaiyum Nooki Paarpavarea Lyrics in
+              English
+            </strong>
+          </p>
+        </div>
+        <p className="mt-4">
           Jebippavanaiyum thuthipavanaiyum nooki
           <br />
           paarpavarea
@@ -2207,16 +2587,24 @@ const songs = {
   },
   25: {
     subtitle: (
-      <span>
-        <strong>
-          நாசியில சுவாசமுள்ள மனுஷனை நம்பாத - Naasiyil Suvaasamulla Manushanai
-          Nambaadha
-        </strong>
-      </span>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          marginTop: "2rem",
+        }}
+      >
+        <span style={{ textAlign: "center" }}>
+          <strong>
+            நாசியில சுவாசமுள்ள மனுஷனை நம்பாத - Naasiyil Suvaasamulla Manushanai
+            Nambaadha
+          </strong>
+        </span>
+      </div>
     ),
     lyrics: (
       <>
-        <p mt-4>
+        <p className="mt-4">
           நாசியில சுவாசமுள்ள மனுஷனை நம்பாத
           <br />
           அவன் நல்லவனோ கெட்டவனோ
@@ -2257,12 +2645,20 @@ const songs = {
           <br />
           உன்னை பார்க்க (...)
         </p>
-        <p className="mt-8 text-center">
-          <strong style={{ fontSize: "1.875rem" }}>
-            Naasiyil Suvaasamulla Manushanai Nambaadha Lyrics in English
-          </strong>
-        </p>
-        <p mt-4>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "2rem",
+          }}
+        >
+          <p style={{ textAlign: "center", fontSize: "1.875rem" }}>
+            <strong>
+              Naasiyil Suvaasamulla Manushanai Nambaadha Lyrics in English
+            </strong>
+          </p>
+        </div>
+        <p className="mt-4">
           Naasiyil suvaasamulla manushanai nambaadha
           <br />
           Avan nallavano kettavano
@@ -2308,13 +2704,21 @@ const songs = {
   },
   26: {
     subtitle: (
-      <span>
-        <strong>பெலனே என் கண்மலையே - Belanae En Kanmalaiye</strong>
-      </span>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          marginTop: "2rem",
+        }}
+      >
+        <span style={{ textAlign: "center" }}>
+          <strong>பெலனே என் கண்மலையே - Belanae En Kanmalaiye</strong>
+        </span>
+      </div>
     ),
     lyrics: (
       <>
-        <p mt-4>
+        <p className="mt-4">
           பெலனே என் கண்மலையே
           <br />
           என் பெலவினத்தில் பெலனே உறவே[உயிரே] என் உயிர் மூச்சே
@@ -2350,12 +2754,18 @@ const songs = {
           <br />
           பெலனே(--2)
         </p>
-        <p className="mt-8 text-center">
-          <strong style={{ fontSize: "1.875rem" }}>
-            Belanae En Kanmalaiye Lyrics in English
-          </strong>
-        </p>
-        <p mt-4>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "2rem",
+          }}
+        >
+          <p style={{ textAlign: "center", fontSize: "1.875rem" }}>
+            <strong>Belanae En Kanmalaiye Lyrics in English</strong>
+          </p>
+        </div>
+        <p className="mt-4">
           Belanae en kanmalaiye
           <br />
           En belavinaththil belanae urave[uyire] en uyir mooche
@@ -2396,16 +2806,24 @@ const songs = {
   },
   27: {
     subtitle: (
-      <span>
-        <strong>
-          என் நம்பிக்கையின் நங்குரம் இயேசு இருக்க - En Nambikkaiyin Nanguram
-          Yesu Irukka
-        </strong>
-      </span>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          marginTop: "2rem",
+        }}
+      >
+        <span style={{ textAlign: "center" }}>
+          <strong>
+            என் நம்பிக்கையின் நங்குரம் இயேசு இருக்க - En Nambikkaiyin Nanguram
+            Yesu Irukka
+          </strong>
+        </span>
+      </div>
     ),
     lyrics: (
       <>
-        <p mt-4>
+        <p className="mt-4">
           என் நம்பிக்கையின் நங்குரம் இயேசு இருக்க
           <br />
           என் நம்பிக்கையின் நங்குரம் நேசர் இருக்க
@@ -2454,12 +2872,20 @@ const songs = {
           <br />
           பயம் இல்லை(...)
         </p>
-        <p className="mt-8 text-center">
-          <strong style={{ fontSize: "1.875rem" }}>
-            En Nambikkaiyin Nanguram Yesu Irukka Lyrics in English
-          </strong>
-        </p>
-        <p mt-4>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "2rem",
+          }}
+        >
+          <p style={{ textAlign: "center", fontSize: "1.875rem" }}>
+            <strong>
+              En Nambikkaiyin Nanguram Yesu Irukka Lyrics in English
+            </strong>
+          </p>
+        </div>
+        <p className="mt-4">
           En nambikkaiyin nanguram Yesu irukka
           <br />
           En nambikkaiyin nanguram Nesar irukka
@@ -2508,12 +2934,18 @@ const songs = {
           <br />
           Bayam illai(...)
         </p>
-        <p className="mt-8 text-center">
-          <strong style={{ fontSize: "1.875rem" }}>
-            Jeyam Jeyam Jeyam Jeyam Iratham Jeyamey
-          </strong>
-        </p>
-        <p mt-4>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "2rem",
+          }}
+        >
+          <p style={{ textAlign: "center", fontSize: "1.875rem" }}>
+            <strong>Jeyam Jeyam Jeyam Jeyam Iratham Jeyamey</strong>
+          </p>
+        </div>
+        <p className="mt-4">
           Iratham iratham iratham iratham iratham Yesu irathamey
           <br />
           Arikkai seidhiduven
@@ -2525,13 +2957,21 @@ const songs = {
   },
   28: {
     subtitle: (
-      <span>
-        <strong>என்னையும் தேடி வந்தீரே - Ennaiyum Thedi Vanthirey</strong>
-      </span>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          marginTop: "2rem",
+        }}
+      >
+        <span style={{ textAlign: "center" }}>
+          <strong>என்னையும் தேடி வந்தீரே - Ennaiyum Thedi Vanthirey</strong>
+        </span>
+      </div>
     ),
     lyrics: (
       <>
-        <p mt-4>
+        <p className="mt-4">
           என்னையும் தேடி வந்தீரே
           <br />
           உதவி என்று சொன்னீரே-(2)
@@ -2550,12 +2990,18 @@ const songs = {
           <br />
           என்னையும் தேடி வந்தீரே-(2)
         </p>
-        <p className="mt-8 text-center">
-          <strong style={{ fontSize: "1.875rem" }}>
-            Ennaiyum Thedi Vanthirey Lyrics in English
-          </strong>
-        </p>
-        <p mt-4>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "2rem",
+          }}
+        >
+          <p style={{ textAlign: "center", fontSize: "1.875rem" }}>
+            <strong>Ennaiyum Thedi Vanthirey Lyrics in English</strong>
+          </p>
+        </div>
+        <p className="mt-4">
           Ennaiyum thedi vanthirey
           <br />
           Uthavi endru sonniyerey-(2)
@@ -2579,13 +3025,23 @@ const songs = {
   },
   29: {
     subtitle: (
-      <span>
-        <strong>என்னை நன்றாக நடத்திநீரே - Ennai Nanraga Nadaththineere</strong>
-      </span>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          marginTop: "2rem",
+        }}
+      >
+        <span style={{ textAlign: "center" }}>
+          <strong>
+            என்னை நன்றாக நடத்திநீரே - Ennai Nanraga Nadaththineere
+          </strong>
+        </span>
+      </div>
     ),
     lyrics: (
       <>
-        <p mt-4>
+        <p className="mt-4">
           என்னை நன்றாக நடத்திநீரே
           <br />
           எண்ணில் நன்மை ஒன்று இல்லாதபோது
@@ -2628,12 +3084,18 @@ const songs = {
           <br />
           எபினேசரே......(2)
         </p>
-        <p className="mt-8 text-center">
-          <strong style={{ fontSize: "1.875rem" }}>
-            Ennai Nanraga Nadaththineere Lyrics in English
-          </strong>
-        </p>
-        <p mt-4>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "2rem",
+          }}
+        >
+          <p style={{ textAlign: "center", fontSize: "1.875rem" }}>
+            <strong>Ennai Nanraga Nadaththineere Lyrics in English</strong>
+          </p>
+        </div>
+        <p className="mt-4">
           Ennai nanraga nadaththineere
           <br />
           Ennil nanmai onru illaadha podhu
@@ -2681,16 +3143,24 @@ const songs = {
   },
   30: {
     subtitle: (
-      <span>
-        <strong>
-          நான் பரதேசியாய் தங்கும் வீட்டிலே - Naan Parathesiyaay Thangum
-          Veettilae
-        </strong>
-      </span>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          marginTop: "2rem",
+        }}
+      >
+        <span style={{ textAlign: "center" }}>
+          <strong>
+            நான் பரதேசியாய் தங்கும் வீட்டிலே - Naan Parathesiyaay Thangum
+            Veettilae
+          </strong>
+        </span>
+      </div>
     ),
     lyrics: (
       <>
-        <p mt-4>
+        <p className="mt-4">
           நான் பரதேசியாய் தங்கும் வீட்டிலே
           <br />
           உம் பிரமானங்கள் என் கீதங்கள்
@@ -2739,12 +3209,20 @@ const songs = {
           <br />
           என் செல்வம் ---2
         </p>
-        <p className="mt-8 text-center">
-          <strong style={{ fontSize: "1.875rem" }}>
-            Naan Parathesiyaay Thangum Veettilae Lyrics in English
-          </strong>
-        </p>
-        <p mt-4>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "2rem",
+          }}
+        >
+          <p style={{ textAlign: "center", fontSize: "1.875rem" }}>
+            <strong>
+              Naan Parathesiyaay Thangum Veettilae Lyrics in English
+            </strong>
+          </p>
+        </div>
+        <p className="mt-4">
           Naan parathesiyaay thangum veettilae
           <br />
           Um piramaanangal en geethangal
@@ -2798,15 +3276,23 @@ const songs = {
   },
   31: {
     subtitle: (
-      <span>
-        <strong>
-          அவர பூவுக்கு வாசனை தந்தவர் - Avara Poovukku Vaasanai Thandhavar
-        </strong>
-      </span>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          marginTop: "2rem",
+        }}
+      >
+        <span style={{ textAlign: "center" }}>
+          <strong>
+            அவர பூவுக்கு வாசனை தந்தவர் - Avara Poovukku Vaasanai Thandhavar
+          </strong>
+        </span>
+      </div>
     ),
     lyrics: (
       <>
-        <p mt-4>
+        <p className="mt-4">
           அவர பூவுக்கு வாசனை தந்தவர்
           <br />
           அருகம் புல்லுக்கு குணத்தை தந்தவர்
@@ -2849,12 +3335,20 @@ const songs = {
           <br />
           இயேசு என்னை பாரு (2)
         </p>
-        <p className="mt-8 text-center">
-          <strong style={{ fontSize: "1.875rem" }}>
-            Avara Poovukku Vaasanai Thandhavar Lyrics in English
-          </strong>
-        </p>
-        <p mt-4>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "2rem",
+          }}
+        >
+          <p style={{ textAlign: "center", fontSize: "1.875rem" }}>
+            <strong>
+              Avara Poovukku Vaasanai Thandhavar Lyrics in English
+            </strong>
+          </p>
+        </div>
+        <p className="mt-4">
           Avara poovukku vaasanai thandhavar
           <br />
           Arugam pullukku gunaththai thandhavar
@@ -2903,15 +3397,23 @@ const songs = {
   },
   32: {
     subtitle: (
-      <span>
-        <strong>
-          அவர பூவுக்கு வாசனை தந்தவர் - Avara poovukku vaasanai thandhavar
-        </strong>
-      </span>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          marginTop: "2rem",
+        }}
+      >
+        <span style={{ textAlign: "center" }}>
+          <strong>
+            அவர பூவுக்கு வாசனை தந்தவர் - Avara poovukku vaasanai thandhavar
+          </strong>
+        </span>
+      </div>
     ),
     lyrics: (
       <>
-        <p mt-4>
+        <p className="mt-4">
           அவர பூவுக்கு வாசனை தந்தவர்
           <br />
           அருகம் புல்லுக்கு குணத்தை தந்தவர்
@@ -2950,12 +3452,20 @@ const songs = {
           உண்மையான வாழ்விற்கு உயர்வு நிச்சயமே
           <br />- மாற்றுகிறார்
         </p>
-        <p className="mt-8 text-center">
-          <strong style={{ fontSize: "1.875rem" }}>
-            Avara poovukku vaasanai thandhavar Lyrics in English
-          </strong>
-        </p>
-        <p mt-4>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "2rem",
+          }}
+        >
+          <p style={{ textAlign: "center", fontSize: "1.875rem" }}>
+            <strong>
+              Avara poovukku vaasanai thandhavar Lyrics in English
+            </strong>
+          </p>
+        </div>
+        <p className="mt-4">
           Aalayathil alagaana thoongalaai
           <br />
           Aandavar yeasu ennai maatrugiraar
@@ -3014,13 +3524,21 @@ const songs = {
   },
   33: {
     subtitle: (
-      <span>
-        <strong>தேவா ஆராதிக்கிறோம் - Deva Aarathikkrom</strong>
-      </span>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          marginTop: "2rem",
+        }}
+      >
+        <span style={{ textAlign: "center" }}>
+          <strong>தேவா ஆராதிக்கிறோம் - Deva Aarathikkrom</strong>
+        </span>
+      </div>
     ),
     lyrics: (
       <>
-        <p mt-4>
+        <p className="mt-4">
           தேவா ஆராதிக்கிறோம்
           <br />
           உயர்த்துகிறோம்
@@ -3054,12 +3572,18 @@ const songs = {
           <br />
           எங்களை நிரப்பிடுமே!
         </p>
-        <p className="mt-8 text-center">
-          <strong style={{ fontSize: "1.875rem" }}>
-            Deva Aarathikkrom Lyrics in English
-          </strong>
-        </p>
-        <p mt-4>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "2rem",
+          }}
+        >
+          <p style={{ textAlign: "center", fontSize: "1.875rem" }}>
+            <strong>Deva Aarathikkrom Lyrics in English</strong>
+          </p>
+        </div>
+        <p className="mt-4">
           Deva aarathikkrom
           <br />
           Uyarthukindrom
@@ -3098,15 +3622,23 @@ const songs = {
   },
   34: {
     subtitle: (
-      <span>
-        <strong>
-          பாசமுள்ள இயேசு அப்பா பாரில் - Paasamalla Yesu Appa Paaril
-        </strong>
-      </span>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          marginTop: "2rem",
+        }}
+      >
+        <span style={{ textAlign: "center" }}>
+          <strong>
+            பாசமுள்ள இயேசு அப்பா பாரில் - Paasamalla Yesu Appa Paaril
+          </strong>
+        </span>
+      </div>
     ),
     lyrics: (
       <>
-        <p mt-4>
+        <p className="mt-4">
           பாசமுள்ள இயேசு அப்பா பாரில்
           <br />
           உம்மை உயர்த்துகிரேன்
@@ -3136,12 +3668,18 @@ const songs = {
           <br />
           என்னை மீட்டுக்கொண்டீரே (2)
         </p>
-        <p className="mt-8 text-center">
-          <strong style={{ fontSize: "1.875rem" }}>
-            Paasamalla Yesu Appa Paaril Lyrics in English
-          </strong>
-        </p>
-        <p mt-4>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "2rem",
+          }}
+        >
+          <p style={{ textAlign: "center", fontSize: "1.875rem" }}>
+            <strong>Paasamalla Yesu Appa Paaril Lyrics in English</strong>
+          </p>
+        </div>
+        <p className="mt-4">
           Paasamalla Yesu Appa Paaril
           <br />
           Ummai Uyarthugirean
@@ -3176,13 +3714,21 @@ const songs = {
   },
   35: {
     subtitle: (
-      <span>
-        <strong>சொந்தம் என்று சொல்லிட - Sondham Endru Sollida</strong>
-      </span>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          marginTop: "2rem",
+        }}
+      >
+        <span style={{ textAlign: "center" }}>
+          <strong>சொந்தம் என்று சொல்லிட - Sondham Endru Sollida</strong>
+        </span>
+      </div>
     ),
     lyrics: (
       <>
-        <p mt-4>
+        <p className="mt-4">
           சொந்தம் என்று சொல்லிட
           <br />
           சொந்தமாய் வந்தவரே
@@ -3209,12 +3755,18 @@ const songs = {
           <br />
           உம்மையே நம்பி நான் வாழ்ந்திடுவேன் (2)
         </p>
-        <p className="mt-8 text-center">
-          <strong style={{ fontSize: "1.875rem" }}>
-            Sondham Endru Sollida Lyrics in English
-          </strong>
-        </p>
-        <p mt-4>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "2rem",
+          }}
+        >
+          <p style={{ textAlign: "center", fontSize: "1.875rem" }}>
+            <strong>Sondham Endru Sollida Lyrics in English</strong>
+          </p>
+        </div>
+        <p className="mt-4">
           Sondham Endru Sollida
           <br />
           Sondhamaai Vandhavarae
@@ -3246,15 +3798,24 @@ const songs = {
   },
   36: {
     subtitle: (
-      <span>
-        <strong>
-          பாச கிருபையே, என் நேச கிருபையே - Paasa Kirubaiyae, En Naesa Kirubaiyae
-        </strong>
-      </span>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          marginTop: "2rem",
+        }}
+      >
+        <span style={{ textAlign: "center" }}>
+          <strong>
+            பாச கிருபையே, என் நேச கிருபையே - Paasa Kirubaiyae, En Naesa
+            Kirubaiyae
+          </strong>
+        </span>
+      </div>
     ),
     lyrics: (
       <>
-        <p mt-4>
+        <p className="mt-4">
           பாச கிருபையே,
           <br />
           என் நேச கிருபையே
@@ -3284,12 +3845,20 @@ const songs = {
           <br />
           அழுகின்ற போது என்னை ஆற்றும் கிருபையே
         </p>
-        <p className="mt-8 text-center">
-          <strong style={{ fontSize: "1.875rem" }}>
-            Paasa Kirubaiyae, En Naesa Kirubaiyae Lyrics in English
-          </strong>
-        </p>
-        <p mt-4>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "2rem",
+          }}
+        >
+          <p style={{ textAlign: "center", fontSize: "1.875rem" }}>
+            <strong>
+              Paasa Kirubaiyae, En Naesa Kirubaiyae Lyrics in English
+            </strong>
+          </p>
+        </div>
+        <p className="mt-4">
           Paasa Kirubaiyae,
           <br />
           En Naesa Kirubaiyae
@@ -3324,12 +3893,20 @@ const songs = {
   },
   37: {
     subtitle: (
-      <span>
-        <strong>
-          வானத்தை பார்த்தாள் பூமி சிறியது - Vaanaththai Paarthaal Bhoomi
-          Siriyadhu
-        </strong>
-      </span>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          marginTop: "2rem",
+        }}
+      >
+        <span style={{ textAlign: "center" }}>
+          <strong>
+            வானத்தை பார்த்தாள் பூமி சிறியது - Vaanaththai Paarthaal Bhoomi
+            Siriyadhu
+          </strong>
+        </span>
+      </div>
     ),
     lyrics: (
       <>
@@ -3359,11 +3936,19 @@ const songs = {
           <br />
           நீ ஏக்கம் துரத்திடு! உன் தேவன் என்றும் தூக்கி நிறுத்துவார்.
         </p>
-        <p className="mt-8 text-center">
-          <strong style={{ fontSize: "1.875rem" }}>
-            Vaanaththai Paarthaal Bhoomi Siriyadhu Lyrics in English
-          </strong>
-        </p>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "2rem",
+          }}
+        >
+          <p style={{ textAlign: "center", fontSize: "1.875rem" }}>
+            <strong>
+              Vaanaththai Paarthaal Bhoomi Siriyadhu Lyrics in English
+            </strong>
+          </p>
+        </div>
         <p className="mt-4">
           Vaanaththai Paarthaal Bhoomi Siriyadhu
           <br />
@@ -3395,12 +3980,20 @@ const songs = {
   },
   38: {
     subtitle: (
-      <span>
-        <strong>
-          யெகோவா தெய்வனை என் நல்ல மெய்பவரே - Yehovaa Dheivanaai En Nalla
-          Meipavarae
-        </strong>
-      </span>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          marginTop: "2rem",
+        }}
+      >
+        <span style={{ textAlign: "center" }}>
+          <strong>
+            யெகோவா தெய்வனை என் நல்ல மெய்பவரே - Yehovaa Dheivanaai En Nalla
+            Meipavarae
+          </strong>
+        </span>
+      </div>
     ),
     lyrics: (
       <>
@@ -3445,11 +4038,19 @@ const songs = {
           <br />
           யெகோவா தேவன் மணவாளனே
         </p>
-        <p className="mt-8 text-center">
-          <strong style={{ fontSize: "1.875rem" }}>
-            Yehovaa Dheivanaai En Nalla Meipavarae Lyrics in English
-          </strong>
-        </p>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "2rem",
+          }}
+        >
+          <p style={{ textAlign: "center", fontSize: "1.875rem" }}>
+            <strong>
+              Yehovaa Dheivanaai En Nalla Meipavarae Lyrics in English
+            </strong>
+          </p>
+        </div>
         <p className="mt-4">
           Yehovaa Dheivanaai En Nalla Meipavarae
           <br />
@@ -3496,12 +4097,20 @@ const songs = {
   },
   39: {
     subtitle: (
-      <span>
-        <strong>
-          பரிசுத்தம் சுத்தம் சுத்தம் என்னில் தாரும் - Parisuththam Suththam
-          Suththam Ennill Thaarum
-        </strong>
-      </span>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          marginTop: "2rem",
+        }}
+      >
+        <span style={{ textAlign: "center" }}>
+          <strong>
+            பரிசுத்தம் சுத்தம் சுத்தம் என்னில் தாரும் - Parisuththam Suththam
+            Suththam Ennill Thaarum
+          </strong>
+        </span>
+      </div>
     ),
     lyrics: (
       <>
@@ -3538,11 +4147,19 @@ const songs = {
           <br />
           பரிசுத்தம் சுத்தம் எண்ணில் தாரும் சுத்த தெய்வமே (2)
         </p>
-        <p className="mt-8 text-center">
-          <strong style={{ fontSize: "1.875rem" }}>
-            Parisuththam Suththam Suththam Ennill Thaarum Lyrics in English
-          </strong>
-        </p>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "2rem",
+          }}
+        >
+          <p style={{ textAlign: "center", fontSize: "1.875rem" }}>
+            <strong>
+              Parisuththam Suththam Suththam Ennill Thaarum Lyrics in English
+            </strong>
+          </p>
+        </div>
         <p className="mt-4">
           Parisuththam Suththam Suththam Ennill Thaarum
           <br />
@@ -3591,10 +4208,10 @@ const SongDetail = () => {
 
   return (
     <div className="text-center py-8 px-4 md:py-16 md:px-8">
-      <h2 className="text-2xl md:text-3xl mb-4 relative mx-4 md:mx-0">
+      <h2 className="text-2xl md:text-3xl mb-4 mt-4 md:mt-0 mx-auto max-w-2xl">
         {song.subtitle}
       </h2>
-      <div className="text-lg md:text-xl text-left mx-auto max-w-full md:max-w-3xl whitespace-pre-wrap px-4">
+      <div className="text-lg md:text-xl text-left mx-auto max-w-2xl whitespace-pre-wrap px-4">
         {song.lyrics}
       </div>
     </div>
