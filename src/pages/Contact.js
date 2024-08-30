@@ -101,7 +101,7 @@ const Contact = () => {
               />
             </a>
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/city_ipa_church?igsh=dXQ2em5odmQ4bmNn"
               target="_blank"
               rel="noopener noreferrer"
             >

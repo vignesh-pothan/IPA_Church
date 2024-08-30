@@ -19,7 +19,7 @@ const ministries = [
   {
     title: "Women's Fellowship (பெண்கள் ஐக்கியம்)",
     content: `The Women's Fellowship is a place where women of all backgrounds come together to support and uplift one another in their spiritual journeys. Our ministry is focused on empowering women to live purpose-driven lives, rooted in the teachings of Christ. We offer Bible studies, prayer groups, and outreach programs that foster spiritual growth, community, and sisterhood. Our gatherings are a time of encouragement, where women can share their experiences, seek guidance, and find strength in their faith. We are committed to helping each woman discover her God-given gifts and use them to serve her family, church, and community.`,
-    image: "https://via.placeholder.com/1280x720",
+    image: "/women.png",
   },
   {
     title: "Media Department",
@@ -44,7 +44,7 @@ const ministries = [
   {
     title: "TV Ministry",
     content: `The TV Ministry is a powerful tool that we use to reach a broad audience with the message of hope and salvation. Through television broadcasts, we are able to share the gospel with people who may not be able to attend church in person. Our ministry is committed to producing high-quality programs that are both spiritually enriching and accessible to viewers of all ages. We believe in the importance of using media to spread the word of God and to offer encouragement and inspiration to those who are seeking spiritual guidance. Our TV Ministry is a beacon of hope, reaching into homes and hearts with the life-changing message of Jesus Christ.`,
-    image: "https://via.placeholder.com/1280x720",
+    image: "/tv.png",
   },
   {
     title: "Vision Department",
