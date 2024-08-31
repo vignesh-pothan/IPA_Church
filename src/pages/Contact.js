@@ -44,7 +44,7 @@ const Contact = () => {
 
         <div className="w-full sm:max-w-xs md:max-w-sm p-4 sm:p-6 border rounded-2xl shadow-lg">
           <h2 className="text-xl sm:text-2xl font-bold mb-2">
-            City IPA Church
+            Ebenezer IPA Church
           </h2>
           <p className="font-semibold text-lg sm:text-xl">Visit Us:</p>
           <p className="text-base sm:text-lg font-normal">
@@ -60,7 +60,7 @@ const Contact = () => {
 
         <div className="w-full sm:max-w-xs md:max-w-sm p-4 sm:p-6 border rounded-2xl shadow-lg">
           <h2 className="text-xl sm:text-2xl font-bold mb-2">
-            City IPA Church
+            Hi-Tech IPA Church
           </h2>
           <p className="font-semibold text-lg sm:text-xl">Visit Us:</p>
           <p className="text-base sm:text-lg font-normal">

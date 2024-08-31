@@ -54,7 +54,7 @@ const ministries = [
   {
     title: "Church Maintenance",
     content: `The Church Maintenance Department plays a crucial role in ensuring that our place of worship is always welcoming, clean, and well-maintained. Our team works behind the scenes to take care of the church building and grounds, making sure that everything is in good condition for our services and events. We believe that a well-maintained church is a reflection of our respect for God's house, and we are dedicated to keeping our facilities in top condition. Whether it's repairing a broken fixture, cleaning the sanctuary, or maintaining the landscaping, our team takes pride in their work and serves with a heart of humility and dedication.`,
-    image: "https://via.placeholder.com/1280x720",
+    image: "/maintain.png",
   },
   {
     title: "Charity Department",

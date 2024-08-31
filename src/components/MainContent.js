@@ -23,7 +23,7 @@ const MainContent = () => {
       </div>
 
       {/* Section 2 */}
-      <div className="bg-gray-900 text-white py-12 md:py-24" id="vision">
+      <div className="bg-gray-900 text-white py-8 md:py-16" id="vision">
         <div className="text-center px-4">
           <h2 className="text-3xl md:text-4xl font-bold mb-8 md:mb-12">
             Our Vision
@@ -58,8 +58,47 @@ const MainContent = () => {
           </div>
         </div>
       </div>
-
       {/* Section 3 */}
+      <div className="text-center py-4 md:py-8 px-4">
+        <div className="flex flex-col md:flex-row justify-center md:space-x-16 space-y-8 md:space-y-0">
+          <div>
+            <img
+              src="/s1.png"
+              alt="Vannarpettai"
+              className="w-full object-cover"
+            />
+            <p className="mt-2 font-bold text-black text-lg md:text-xl">
+              Pas. Praveen Kumar M.Th
+              <br />
+              Senior Pastor
+            </p>
+          </div>
+          <div>
+            <img
+              src="/s2.png"
+              alt="Thiruvengadanathapuram"
+              className="w-full object-cover"
+            />
+            <p className="mt-2 font-bold text-black text-lg md:text-xl">
+              Sis. Elizabeth Praveen Kumar
+            </p>
+          </div>
+          <div>
+            <img
+              src="/s3.png"
+              alt="KOKKIRAKULAM"
+              className="w-full object-cover"
+            />
+            <p className="mt-2 font-bold text-black text-lg md:text-xl">
+              Pas. CD Jeyaraj
+              <br />
+              Assistant Pastor
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Section 4 */}
       <div id="services" className="py-8 px-4">
         <div className="text-center">
           <h2 className="text-2xl md:text-3xl font-bold mb-4">
@@ -83,7 +122,7 @@ const MainContent = () => {
         </div>
       </div>
 
-      {/* Section 4 */}
+      {/* Section 5 */}
       <div className="text-center py-8 md:py-16 px-4">
         <h2 className="text-2xl md:text-3xl font-bold mb-8 md:mb-4">
           ONE CHURCH. THREE LOCATIONS
@@ -137,7 +176,7 @@ const MainContent = () => {
         </div>
       </div>
 
-      {/* Section 5 */}
+      {/* Section 6 */}
       <div className="bg-orange-500 text-center py-8 md:py-16 px-4" id="about">
         <h2 className="text-2xl md:text-3xl font-bold mb-4">
           Follow us on social media.
@@ -179,7 +218,7 @@ const MainContent = () => {
         </div>
       </div>
 
-      {/* Section 6 (Footer) */}
+      {/* Section 7 (Footer) */}
       <div className="bg-gray-800 text-white py-8 px-4" id="contact">
         <div className="flex flex-col md:flex-row justify-between items-start">
           <div className="md:w-1/2 md:pr-4 mb-4 md:mb-0">
