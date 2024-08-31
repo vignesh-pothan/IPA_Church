@@ -101,23 +101,23 @@ const MainContent = () => {
       {/* Section 4 */}
       <div id="services" className="py-8 px-4">
         <div className="text-center">
-          <h2 className="text-2xl md:text-3xl font-bold mb-4">
-            Most Recent Sermon
+          <h2 className="text-2xl md:text-3xl font-bold mb-6">
+            Recent Uploads
           </h2>
-          <div className="relative mx-auto w-full max-w-md">
-            <img
-              src="https://via.placeholder.com/400x200"
-              alt="Sermon"
+          <div className="relative mx-auto w-full max-w-4xl">
+            {" "}
+            {/* Adjust max-w to make it larger */}
+            {/* Embed YouTube video */}
+            <iframe
+              width="100%"
+              height="400"
+              src="https://www.youtube.com/embed/cxFWetWxCTI"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
               className="w-full"
-            />
-            <div className="absolute inset-0 flex items-center justify-center">
-              <a
-                href="sermon-link"
-                className="bg-orange-500 text-white px-4 py-2 rounded"
-              >
-                Watch Live
-              </a>
-            </div>
+            ></iframe>
           </div>
         </div>
       </div>
@@ -129,45 +129,45 @@ const MainContent = () => {
         </h2>
         <div className="flex flex-col md:flex-row justify-center md:space-x-16 space-y-8 md:space-y-0">
           <div>
-            <h3 className="text-lg md:text-xl font-semibold mt-4">
-              Vannarpettai
+            <h3 className="text-lg md:text-xl font-bold mt-4 uppercase mb-4">
+              VANNARPETTAI
             </h3>
             <img
-              src="https://via.placeholder.com/400x200"
-              alt="The Brook"
-              className="w-full object-cover"
+              src="/v1.png"
+              alt="Vannarpettai"
+              className="w-full h-60 md:h-80 object-cover"
             />
-            <p className="mt-2 text-gray-600">
+            <p className="mt-2 text-gray-600 font-semibold">
               Vannarpettai
               <br />
               Every Sunday 8:30 AM - 11 AM
             </p>
           </div>
           <div>
-            <h3 className="text-lg md:text-xl font-semibold mt-4">
-              Thiruvengadanathapuram
+            <h3 className="text-lg md:text-xl font-bold mt-4 uppercase mb-4">
+              THIRUVENGADANATHAPURAM
             </h3>
             <img
-              src="https://via.placeholder.com/400x200"
-              alt="The Valley"
-              className="w-full object-cover"
+              src="/v2.png"
+              alt="Thiruvengadanathapuram"
+              className="w-full h-60 md:h-80 object-cover"
             />
-            <p className="mt-2 text-gray-600">
+            <p className="mt-2 text-gray-600 font-semibold">
               Thiruvengadanathapuram
               <br />
               Every Sunday 6:00 AM - 8:30 AM (Except first Sunday)
             </p>
           </div>
           <div>
-            <h3 className="text-lg md:text-xl font-semibold mt-4">
+            <h3 className="text-lg md:text-xl font-bold mt-4 uppercase mb-4">
               KOKKIRAKULAM
             </h3>
             <img
-              src="https://via.placeholder.com/400x200"
+              src="/v3.png"
               alt="Kokkirakulam"
-              className="w-full object-cover"
+              className="w-full h-60 md:h-80 object-cover"
             />
-            <p className="mt-2 text-gray-600">
+            <p className="mt-2 text-gray-600 font-semibold">
               Kokkirakulam
               <br />
               Every Sunday 6:30 PM - 8 PM (Except first Sunday)
@@ -226,7 +226,7 @@ const MainContent = () => {
             <p>N Bypass Road, Vannarpettai, Tirunelveli, Tamil Nadu 627003</p>
             <p>Phone: +91 94434 97344</p>
           </div>
-          <div className="md:w-1/2 md:pl-4 text-left md:text-right">
+          <div className="md:w-1/2 md:pl-4 text-left md:text-right mt-4 md:mt-0">
             <h3 className="text-lg md:text-xl font-semibold">Quick Links</h3>
             <ul className="space-y-2">
               <li>
@@ -250,6 +250,9 @@ const MainContent = () => {
         <p className="mt-6 text-center">
           © {new Date().getFullYear()} IPA CHURCH TIRUNELVELI | All Rights
           Reserved
+        </p>
+        <p className="mt-6 text-right text-sm text-gray-400 md:ml-auto md:w-auto">
+          Developed by @BhowmikzAR
         </p>
       </div>
     </div>
